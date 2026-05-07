@@ -6,6 +6,17 @@ import Link from 'next/link';
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+    const frameworkItems = [
+        { name: "CCPA", href: "/framework/ccpa" },
+        { name: "COSO", href: "/framework/coso" },
+        { name: "GDPR", href: "/framework/gdpr" },
+        { name: "HIPAA", href: "/framework/hipaa" },
+        { name: "ISO", href: "/framework/iso" },
+        { name: "NIST", href: "/framework/nist" },
+        { name: "PCI", href: "/framework/pci" },
+        { name: "SOC2", href: "/framework/soc2" },
+    ];
+
     return (
         <header className="cpaw2 ctz8y fixed top-0 bg-background/50 backdrop-blur-lg">
             <div className="c7rlc ca7yh cxk7g c62s6">
@@ -13,13 +24,12 @@ const Navbar = () => {
 
                     {/* Site branding */}
                     <div className="ceb4u">
-                        {/* Logo */}
                         <Link href="/" aria-label="Cruip">
                             <Image
                                 className="cw312"
-                                src="/logo.svg"
-                                width={38}
-                                height={38}
+                                src="/certx-logo-1.png"
+                                width={100}
+                                height={100}
                                 alt="Stellar"
                             />
                         </Link>
@@ -28,24 +38,89 @@ const Navbar = () => {
                     {/* Desktop navigation */}
                     <nav className="ckft5 c4bse c01dc">
                         <ul className="cv6pf cta5t ckscb citnk cih8s">
-                        <li>
-                                    <Link
-                                        className="cs6tu chu7q cz8jp cm2qf cscsd coh5f cpl7r c4cae cr6r1"
-                                        href={`/`}
+
+                            <li>
+                                <Link
+                                    className="cs6tu chu7q cz8jp cm2qf cscsd coh5f cpl7r c4cae cr6r1"
+                                    href={`/`}
+                                >
+                                    Home
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link
+                                    className="cs6tu chu7q cz8jp cm2qf cscsd coh5f cpl7r c4cae cr6r1"
+                                    href={`/about`}
+                                >
+                                    About
+                                </Link>
+                            </li>
+
+                            {/* Framework Dropdown */}
+                            <li className="framework-dropdown">
+                                <Link
+                                    className="cs6tu chu7q cz8jp cm2qf cscsd coh5f cpl7r c4cae cr6r1 framework-dropdown-link"
+                                    href={`/framework`}
+                                >
+                                    Framework
+
+                                    <svg
+                                        className="framework-dropdown-arrow"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="14"
+                                        height="14"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
                                     >
-                                        Home
-                                    </Link>
-                                </li>
-                            {['About', 'Integrations', 'Pricing', 'Customers', 'Changelog'].map((item) => (
-                                <li key={item}>
-                                    <Link
-                                        className="cs6tu chu7q cz8jp cm2qf cscsd coh5f cpl7r c4cae cr6r1"
-                                        href={`/${item.toLowerCase()}`}
-                                    >
-                                        {item}
-                                    </Link>
-                                </li>
-                            ))}
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </Link>
+
+                                <div className="framework-dropdown-menu">
+                                    <ul className="framework-dropdown-menu-inner">
+                                        {frameworkItems.map((item) => (
+                                            <li key={item.name}>
+                                                <Link href={item.href}>
+                                                    {item.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <Link
+                                    className="cs6tu chu7q cz8jp cm2qf cscsd coh5f cpl7r c4cae cr6r1"
+                                    href={`/industry`}
+                                >
+                                    Industry
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link
+                                    className="cs6tu chu7q cz8jp cm2qf cscsd coh5f cpl7r c4cae cr6r1"
+                                    href={`/contact`}
+                                >
+                                    Contact
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link
+                                    className="cs6tu chu7q cz8jp cm2qf cscsd coh5f cpl7r c4cae cr6r1"
+                                    href={`/changelog`}
+                                >
+                                    Changelog
+                                </Link>
+                            </li>
+
                         </ul>
                     </nav>
 
@@ -59,13 +134,17 @@ const Navbar = () => {
                                 Sign in
                             </Link>
                         </li>
+
                         <li className="cogux">
                             <Link
                                 className="cjg8t ce8dy cjhxf ccdmz cs6tu ckogm c8c0t chu7q cz8jp cscsd coh5f c4lt2 c36y6 cpaw2 c73l4"
                                 href="/signup"
                             >
                                 <span className="cta5t c1ser c4lt2">
-                                    Sign up <span className="crls0 c4v48 c18jp c1nfs cz8jp cscsd cvpqc">-&gt;</span>
+                                    Sign up
+                                    <span className="crls0 c4v48 c18jp c1nfs cz8jp cscsd cvpqc">
+                                        -&gt;
+                                    </span>
                                 </span>
                             </Link>
                         </li>
@@ -73,7 +152,7 @@ const Navbar = () => {
 
                     {/* Mobile menu */}
                     <div className="cta5t c3odk ckq5l citnk">
-                        {/* Hamburger button */}
+
                         <button
                             className="cs6tu cv6pf chu7q cta5t c1ser c0adw coh5f c73l4 c12cr czkwf"
                             aria-controls="mobile-nav"
@@ -81,7 +160,12 @@ const Navbar = () => {
                             onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
                         >
                             <span className="c6qme">Menu</span>
-                            <svg className="cdzmb c01eg cppgq cchn9" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+
+                            <svg
+                                className="cdzmb c01eg cppgq cchn9"
+                                viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
                                 <rect className="cl6a4 cbcyu codbc cn8i4 ctukp cnhd4 cccm5" y="7" width="16" height="2" rx="1"></rect>
                                 <rect className="ctvrd czjmr ctukp cnhd4 cccm5" y="7" width="16" height="2" rx="1"></rect>
                                 <rect className="cl6a4 ck3xz codbc csena ctukp cnhd4 cccm5" y="7" width="16" height="2" rx="1"></rect>
@@ -96,7 +180,8 @@ const Navbar = () => {
                             }`}
                         >
                             <ul className="cjg8t cn0tc c6nee clat9 cb919 c62s6">
-                            <li>
+
+                                <li>
                                     <Link
                                         className="cs6tu chu7q cm2qf clat9 c4cae citnk"
                                         href={`/`}
@@ -104,18 +189,63 @@ const Navbar = () => {
                                         Home
                                     </Link>
                                 </li>
-                                {['About', 'Integrations', 'Pricing', 'Customers', 'Changelog'].map((item) => (
-                                    <li key={item}>
-                                        <Link
-                                            className="cs6tu chu7q cm2qf clat9 c4cae citnk"
-                                            href={`/${item.toLowerCase()}`}
-                                        >
-                                            {item}
-                                        </Link>
-                                    </li>
-                                ))}
+
+                                <li>
+                                    <Link
+                                        className="cs6tu chu7q cm2qf clat9 c4cae citnk"
+                                        href={`/about`}
+                                    >
+                                        About
+                                    </Link>
+                                </li>
+
+                                {/* Mobile Framework Dropdown */}
+                                <li>
+                                    <div className="cs6tu chu7q cm2qf clat9 c4cae citnk mobile-framework-title">
+                                        Framework
+                                    </div>
+
+                                    <ul className="mobile-framework-menu">
+                                        {frameworkItems.map((item) => (
+                                            <li key={item.name}>
+                                                <Link href={item.href}>
+                                                    {item.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <Link
+                                        className="cs6tu chu7q cm2qf clat9 c4cae citnk"
+                                        href={`/industry`}
+                                    >
+                                        Industry
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link
+                                        className="cs6tu chu7q cm2qf clat9 c4cae citnk"
+                                        href={`/contact`}
+                                    >
+                                        Contact
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link
+                                        className="cs6tu chu7q cm2qf clat9 c4cae citnk"
+                                        href={`/changelog`}
+                                    >
+                                        Changelog
+                                    </Link>
+                                </li>
+
                             </ul>
                         </nav>
+
                     </div>
 
                 </div>

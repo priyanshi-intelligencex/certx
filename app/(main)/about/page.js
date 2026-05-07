@@ -90,7 +90,7 @@ const About = () => {
 
                             {/* Section header */}
                             <div className="cxk7g cpqxv cpwbp c0adw cjqw8">
-                                <h2 className="c3myr c80q8 chl73 c9p57 ch30f cnt4i crgfn" data-aos="fade-up">Our story (so far)</h2>
+                                <h2 className="c3myr c80q8 chl73 c9p57 ch30f cnt4i crgfn" data-aos="fade-up">About Us</h2>
                             </div>
 
                             <div className="cu781 cwsds ckft5 cwj02 ckghx">
@@ -106,10 +106,10 @@ const About = () => {
                                 <div className="cxk7g crn2g">
                                     <div className="cuw2g c16mo" data-aos="fade-left">
                                         <p>
-                                            We came together over a shared excitement about building a product that could solve our own problem of where our next favourite hack is coming from. But also a product that helps everyone thrive in this market: from founders and engineers to companies and investors.
+                                            we understand that managing cybersecurity and compliance can be complex, time-consuming, and challenging for businesses. That’s why we’ve created a powerful platform designed to simplify and streamline the process, enabling you to stay ahead in a constantly evolving digital world.
                                         </p>
                                         <p>
-                                            Vruvian is a product that connects people around the topics and ideas that fascinate them. <strong className="cm2qf cqbkb">The idea that we can use technology to take our experience</strong>, as security lovers, to a new dimension and leave the computer industry in better shape while we&apos;re at it.
+                                            From discovering cyber assets to setting up and managing your information security program, our platform offers an all-in-one solution that gives you complete control over your compliance journey.
                                         </p>
                                         <p>
                                             You can dive into the atoms that make up a product, share the moments that move you and discuss the ideas you find compelling. We want to create a ground for <strong className="cm2qf cqbkb">discussion and bring knowledge together</strong>, while making it more accessible and easier to grasp.

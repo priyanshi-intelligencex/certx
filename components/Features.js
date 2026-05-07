@@ -34,8 +34,8 @@ const Features = () => {
                                     <div>
                                         <div className="c80q8 crgfn cpvrw cic8n cnt4i c1ser cm2qf clj4z">The security first platform</div>
                                     </div>
-                                    <h3 className="chl73 c80q8 ch30f crgfn c9p57 cnt4i clj4z c78uk">Simplify your security with authentication services</h3>
-                                    <p className="c16mo csqzg ci5zu">Define access roles for the end-users, and extend your authorization capabilities to implement dynamic access control.</p>
+                                    <h3 className="chl73 c80q8 ch30f crgfn c9p57 cnt4i clj4z c78uk">Why Leading Enterprises Choose Our Platform​</h3>
+                                    <p className="c16mo csqzg ci5zu">Trusted by industry leaders, our platform is a proven solution that supports both immediate goals and long-term strategic visions, ensuring enterprises stay ahead of the competition and achieve their full potential.</p>
                                     <div className="ckwe7 cmcd2 c0fvl cbg2n">
                                         <button
                                             className={`c4h8f cpq1v cqbkb cta5t cz8jp cm2qf cscsd coh5f c90mn c4cae cpaw2 cb919 citnk c6rcm c405v ${activeTab !== '1' ? 'cj4h1 ca93n' : 'ckqrw cx431 cl5ur'}`}
