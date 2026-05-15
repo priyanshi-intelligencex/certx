@@ -25,10 +25,6 @@ export default function Home() {
 
   const clients = [
     {
-      src: "/customer-01white.png",
-      alt: "Customer 1",
-    },
-    {
       src: "/customer-2white.png",
       alt: "Customer 2",
     },
@@ -160,39 +156,41 @@ export default function Home() {
 
             <div className="cgqta clyt5">
               <div className="cxmgp">
-                <div className="cyeq5 cxmgp c1ser cmt6c cpaw2">
-                  {/* Clients List */}
-                  <ul className="cbp9w cb1bd cwrr1 cv8zd cv6pf cta5t citnk">
-                    {clients.map((client, index) => (
-                      <li key={`client-${index}`}>
-                        <Image
-                          src={client.src}
-                          alt={client.alt}
-                          width={100}
-                          height={100}
-                          className="brightness-0 invert"
-                        />
-                      </li>
-                    ))}
-                  </ul>
+                <div className="cyeq5 cxmgp cpaw2">
+                  <div className="marquee-track">
+                    {/* Clients List */}
+                    <ul className="cb1bd cwrr1 cv8zd cv6pf cta5t citnk">
+                      {clients.map((client, index) => (
+                        <li key={`client-${index}`}>
+                          <Image
+                            src={client.src}
+                            alt={client.alt}
+                            width={100}
+                            height={100}
+                            className="brightness-0 invert"
+                          />
+                        </li>
+                      ))}
+                    </ul>
 
-                  {/* Duplicated Clients List for Animation */}
-                  <ul
-                    className="cbp9w cb1bd cwrr1 cv8zd cv6pf cta5t citnk"
-                    aria-hidden="true"
-                  >
-                    {clients.map((client, index) => (
-                      <li key={`client-duplicate-${index}`}>
-                        <Image
-                          src={client.src}
-                          alt={client.alt}
-                          width={100} // Adjust as needed
-                          height={100} // Adjust as needed
-                          className="brightness-0 invert"
-                        />
-                      </li>
-                    ))}
-                  </ul>
+                    {/* Duplicated Clients List for seamless loop */}
+                    <ul
+                      className="cb1bd cwrr1 cv8zd cv6pf cta5t citnk"
+                      aria-hidden="true"
+                    >
+                      {clients.map((client, index) => (
+                        <li key={`client-duplicate-${index}`}>
+                          <Image
+                            src={client.src}
+                            alt={client.alt}
+                            width={100}
+                            height={100}
+                            className="brightness-0 invert"
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

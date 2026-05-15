@@ -12,7 +12,7 @@ const Footer = () => {
 
           <Link href="/">
             <Image
-              src="/logo.png2.png"
+              src="/certx-logo.png"
               alt="CERTX"
               width={50}
               height={50}
@@ -24,11 +24,7 @@ const Footer = () => {
             © Certx.com - All rights reserved.
           </p>
 
-          <div className="flex gap-7 text-[#b45cff] text-lg">
-            <span>𝕏</span>
-            <span>▣</span>
-            <span>●</span>
-          </div>
+          
 
         </div>
 

@@ -1,11 +1,18 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const frameworkItems = [
     { name: "CCPA", href: "/framework/ccpa" },
@@ -29,15 +36,15 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="cpaw2 ctz8y fixed top-0 navbar-glass">
-      <div className="c7rlc ca7yh cxk7g c62s6 ">
+    <header className="cpaw2 sticky top-0 z-50 navbar-outer">
+      <div className={`c7rlc ca7yh cxk7g c62s6 navbar-pill${scrolled ? " navbar-pill-scrolled" : ""}`}>
         <div className="cu781 cta5t c7uhm citnk cqxtx ">
 
-          <div className="flex items-center navbar-capsule">
-            <Link href="/" aria-label="Cruip">
+          <div className="flex items-center">
+            <Link href="/" aria-label="Cruip" className="logo-capsule">
               <Image
                 className="cw312"
-                src="/certx-logo-1.png"
+                src="/certx-logo.png"
                 width={100}
                 height={100}
                 alt="Stellar"
