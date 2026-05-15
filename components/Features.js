@@ -37,33 +37,7 @@ const Features = () => {
                                     <h3 className="chl73 c80q8 ch30f crgfn c9p57 cnt4i clj4z c78uk">Why Leading Enterprises Choose Our Platform​</h3>
                                     <p className="c16mo csqzg ci5zu">Trusted by industry leaders, our platform is a proven solution that supports both immediate goals and long-term strategic visions, ensuring enterprises stay ahead of the competition and achieve their full potential.</p>
                                     <div className="ckwe7 cmcd2 c0fvl cbg2n">
-                                        <button
-                                            className={`c4h8f cpq1v cqbkb cta5t cz8jp cm2qf cscsd coh5f c90mn c4cae cpaw2 cb919 citnk c6rcm c405v ${activeTab !== '1' ? 'cj4h1 ca93n' : 'ckqrw cx431 cl5ur'}`}
-                                            onClick={() => setActiveTab('1')}
-                                        >
-                                            <svg className="c21kk clbq5 cuupb" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                                                <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12Zm0 14V2H2v12h12Zm-3-7H5a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2Zm0 4H5a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z"></path>
-                                            </svg>
-                                            <span>Simplify your security</span>
-                                        </button>
-                                        <button
-                                            className={`c4h8f cpq1v cqbkb cta5t cz8jp cm2qf cscsd coh5f c90mn c4cae cpaw2 cb919 citnk c6rcm c405v ${activeTab !== '2' ? 'cj4h1 ca93n' : 'ckqrw cx431 cl5ur'}`}
-                                            onClick={() => setActiveTab('2')}
-                                        >
-                                            <svg className="c21kk clbq5 cuupb" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                                                <path d="M2 6H0V2a2 2 0 0 1 2-2h4v2H2v4ZM16 6h-2V2h-4V0h4a2 2 0 0 1 2 2v4ZM14 16h-4v-2h4v-4h2v4a2 2 0 0 1-2 2ZM6 16H2a2 2 0 0 1-2-2v-4h2v4h4v2Z"></path>
-                                            </svg>
-                                            <span>Customer identity</span>
-                                        </button>
-                                        <button
-                                            className={`c4h8f cpq1v cqbkb cta5t cz8jp cm2qf cscsd coh5f c90mn c4cae cpaw2 cb919 citnk c6rcm c405v ${activeTab !== '3' ? 'cj4h1 ca93n' : 'ckqrw cx431 cl5ur'}`}
-                                            onClick={() => setActiveTab('3')}
-                                        >
-                                            <svg className="c21kk clbq5 cuupb" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                                                <path d="M14.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8-8ZM15 7c.6 0 1 .4 1 1 0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8c.6 0 1 .4 1 1s-.4 1-1 1C4.7 2 2 4.7 2 8s2.7 6 6 6 6-2.7 6-6c0-.6.4-1 1-1Z"></path>
-                                            </svg>
-                                            <span>Adaptable authentication</span>
-                                        </button>
+                                        
                                     </div>
                                 </div>
 

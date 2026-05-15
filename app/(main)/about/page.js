@@ -38,7 +38,7 @@ const About = () => {
 
                         {/* Hero content */}
                         <div className="c0adw" data-aos="fade-down">
-                            <div className="c1ser c80q8 cpvrw cic8n cnt4i clj4z cm2qf crgfn">The folks behind the product</div>
+                            <div className="c1ser c80q8 cpvrw cic8n cnt4i clj4z cm2qf crgfn"></div>
                             <h1 className="cgxy0 c80q8 chl73 c9p57 ch30f cnt4i cwyf6 crgfn">Turning security into innovation</h1>
                             {/* Rings illustration */}
                             <div className="c4lt2 c1ser cta5t cv6pf" data-aos="zoom-in">
@@ -111,16 +111,6 @@ const About = () => {
                                         <p>
                                             From discovering cyber assets to setting up and managing your information security program, our platform offers an all-in-one solution that gives you complete control over your compliance journey.
                                         </p>
-                                        <p>
-                                            You can dive into the atoms that make up a product, share the moments that move you and discuss the ideas you find compelling. We want to create a ground for <strong className="cm2qf cqbkb">discussion and bring knowledge together</strong>, while making it more accessible and easier to grasp.
-                                        </p>
-                                        <p>
-                                            Contrary to popular belief, this product is not random security. It has roots in a piece of classical literature, making it over 5 years old. Richard McClintock, a professor at <Link className="cm2qf c1nfs cxwtc" href="#0">Hampden-Sydney College</Link> in Virginia, looked up one of the more obscure words, consectetur from a passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
-                                        </p>
-                                        <p>
-                                            We all thrive on learning something new every day and everyone is constantly trying on different hats. We are working with new technologies while rethinking an old industry and are excited about all the possibilities and opportunities to innovate.
-                                            It&apos;s a problem deeply ingrained in traditional sectors like startups and the wider service industry but which has been compounded in the past five to ten years by the emergence of the mostly tech-powered gig economy which has created a new generation of shift workers and indeed
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -130,427 +120,7 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Team */}
-            <section className="c4lt2" data-aos="fade-up">
-                {/* Radial gradient */}
-                <div className="cdzmb csbhs cvjd3 cblyu cxmgp" aria-hidden="true">
-                    <div className="csbhs cq6fz c7anr citnk cq2iz cu6vf ca1ms ch3pd cta5t cv6pf">
-                        <div className="cg3aq csbhs cvjd3 cku0c ci4ze ca93n cje6l"></div>
-                    </div>
-                </div>
-                <div className="cxk7g c7rlc c62s6 ca7yh" >
-                    <div className="clyt5 ct20k">
-                        {/* Content */}
-                        <div className="cxk7g cpqxv cpwbp c0adw cjqw8" data-aos="fade-down">
-                            <h2 className="c3myr c80q8 chl73 c9p57 ch30f cnt4i c6odu crgfn"  >We are a happy, small team</h2>
-                            <p className="csqzg c16mo">Various versions of Lorem Ipsum have evolved over the years, sometimes by accident, sometimes on purpose, and by injecting humour and the like.</p>
-                        </div>
-                        {/* Team members */}
-                        <div className="co6zy c2kaf c9c1i cz8gt can2d cw3xi"  data-aos="flip-up">
-                            {/* Member #01 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-01.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 01"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Sarah Barnekow</div>
-                                        <div className="c4cae cm2qf c1nfs">CEO &amp; Co-founder</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #02 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-02.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 02"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Alex Suevalov</div>
-                                        <div className="c4cae cm2qf c1nfs">Tech Lead</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #03 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-03.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 03"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Mark Lamprecht</div>
-                                        <div className="c4cae cm2qf c1nfs">Software Engineer</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #04 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-04.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 04"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Scott Bailey</div>
-                                        <div className="c4cae cm2qf c1nfs">Software Engineer</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #05 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-05.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 05"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Vedant Hegde</div>
-                                        <div className="c4cae cm2qf c1nfs">Customer Experience</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #06 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-06.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 06"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Lucy Radux</div>
-                                        <div className="c4cae cm2qf c1nfs">Marketing Manager</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #07 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-07.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 07"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Devani Janssen</div>
-                                        <div className="c4cae cm2qf c1nfs">Product Design</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #08 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-08.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 08"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Dima Trystram</div>
-                                        <div className="c4cae cm2qf c1nfs">Customer Success</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #09 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-09.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 09"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Fraser Davidson</div>
-                                        <div className="c4cae cm2qf c1nfs">Customer Success</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #10 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-10.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 10"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">William Adkins</div>
-                                        <div className="c4cae cm2qf c1nfs">Customer Experience</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #11 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-11.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 11"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Debbie Poulin</div>
-                                        <div className="c4cae cm2qf c1nfs">Head of Talent</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #12 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-12.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 12"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">James Kudinov</div>
-                                        <div className="c4cae cm2qf c1nfs">Product Design</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #13 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-13.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 13"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Zhenya Rynzhuk</div>
-                                        <div className="c4cae cm2qf c1nfs">Software Engineer</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #14 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-14.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 14"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Mary Maka</div>
-                                        <div className="c4cae cm2qf c1nfs">Enterprise Architect</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #15 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-15.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 15"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Monty Hayton</div>
-                                        <div className="c4cae cm2qf c1nfs">Video Producer</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #16 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-16.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 16"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Srdjan Vidakovic</div>
-                                        <div className="c4cae cm2qf c1nfs">Operations Manager</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #17 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-17.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 17"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">David Cran</div>
-                                        <div className="c4cae cm2qf c1nfs">Financial Analyst</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #18 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-18.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 18"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Jacek Janiczak</div>
-                                        <div className="c4cae cm2qf c1nfs">Data Engineer</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #19 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-19.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 19"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Tommy Chandra</div>
-                                        <div className="c4cae cm2qf c1nfs">Head of Design</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                            {/* Member #20 */}
-                            <div className="c4lt2 citnk cta5t cu781 c5mk1 ccjhc cb5zl ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg coafw cck46 cn36n cers6 c73l4">
-                                <div className="citnk cta5t c4wi6">
-                                    <Image
-                                        src="https://preview.cruip.com/stellar/images/team-20.png"
-                                        width={48}
-                                        height={48}
-                                        alt="Team 20"
-                                    />
-                                    <div className="cih8s">
-                                        <div className="czjvy ca7kf ctzj3">Ally Golovko</div>
-                                        <div className="c4cae cm2qf c1nfs">Software Engineer</div>
-                                    </div>
-                                </div>
-                                <Link className="clbq5 c5668 cxz9d cndpm cpcg4 ct1u7 c0on6 csvyp cq3pp" href="#0" aria-label="Member's Twitter">
-                                    <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             {/* Recruitment */}
             <section className="c4lt2">
@@ -573,7 +143,7 @@ const About = () => {
 
                         {/* Section header */}
                         <div className="cxk7g cpqxv cpwbp c0adw cjqw8" data-aos="fade-down">
-                            <h2 className="c3myr c80q8 chl73 c9p57 ch30f cnt4i c6odu crgfn">Join a team of makers</h2>
+                            <h2 className="c3myr c80q8 chl73 c9p57 ch30f cnt4i c6odu crgfn">Key Features</h2>
                             <p className="csqzg c16mo">We are makers at heart. Problem solvers and storytellers. We are a diverse team of individuals who build things to make our customers happy.</p>
                         </div>
 
@@ -589,8 +159,8 @@ const About = () => {
                                         </g>
                                     </svg>
                                 </div>
-                                <div className="cebxn ca7kf ctzj3">Passionate</div>
-                                <p className="c4cae c16mo">You are passionate about digital products of any kind and are a builder at heart.</p>
+                                <div className="cebxn ca7kf ctzj3">24/7 Compliance Monitoring:</div>
+                                <p className="c4cae c16mo">We help you manage and monitor your security controls around the clock to ensure ongoing compliance without disruption.</p>
                             </div>
                             {/* Block #2 */}
                             <div className="ce9r8 c0adw">
@@ -599,8 +169,8 @@ const About = () => {
                                         <path className="c7u3b" d="M9.423 12.278H.87L11.614.458l-1.037 7.264h8.553L8.386 19.542l1.037-7.264Zm-6.293-1h7.447l-.74 5.18 7.033-7.736H9.423l.74-5.18-7.033 7.736Z" opacity=".8"></path>
                                     </svg>
                                 </div>
-                                <div className="cebxn ca7kf ctzj3">Energetic</div>
-                                <p className="c4cae c16mo">You are passionate about digital products of any kind and are a builder at heart.</p>
+                                <div className="cebxn ca7kf ctzj3">Seamless Audit Management</div>
+                                <p className="c4cae c16mo">Our platform allows you to handle multiple compliance audits simultaneously, saving time and effort while ensuring you’re always audit-ready.</p>
                             </div>
                             {/* Block #3 */}
                             <div className="ce9r8 c0adw">
@@ -612,8 +182,8 @@ const About = () => {
                                         </g>
                                     </svg>
                                 </div>
-                                <div className="cebxn ca7kf ctzj3">Achiever</div>
-                                <p className="c4cae c16mo">You are passionate about digital products of any kind and are a builder at heart.</p>
+                                <div className="cebxn ca7kf ctzj3">Centralized Dashboard</div>
+                                <p className="c4cae c16mo">Everything you need is in one place, giving you a comprehensive view of your compliance status, cyber asset discovery, and more—all through an easy-to-use interface.</p>
                             </div>
                         </div>
 
@@ -646,67 +216,7 @@ const About = () => {
                         </svg>
                     </div>
 
-                    <div className="cxk7g cpqxv clyt5 ct20k">
-                        <h3 className="c78uk c1ser c80q8 chl73 c9p57 ch30f cnt4i cin20 crgfn cf8r4" data-aos="fade-left">Open positions</h3>
-                        <div className="c5ett" data-aos="fade-left">
-                            {/* Engineering */}
-                            <div>
-                                <h4 className="c1ser c80q8 cpvrw cic8n cnt4i clj4z cm2qf crgfn">Engineering</h4>
-                                <ul className="c5sky cvimj">
-                                    <li className="citnk cg9hr ckscb cu781 cdq40 cre2l">
-                                        <span className="ceqx4 cm2qf cqbkb">Software Engineering Intern</span>
-                                        <Link className="c1ser c4cae cm2qf c1nfs c73l4" href="#0">Remote / North America <span className="cvpqc c18jp c4v48 cz8jp cscsd crls0">-&gt;</span></Link>
-                                    </li>
-                                    <li className="citnk cg9hr ckscb cu781 cdq40 cre2l">
-                                        <span className="ceqx4 cm2qf cqbkb">Software Engineer, Core Infrastructure</span>
-                                        <Link className="c1ser c4cae cm2qf c1nfs c73l4" href="#0">Remote <span className="cvpqc c18jp c4v48 cz8jp cscsd crls0">-&gt;</span></Link>
-                                    </li>
-                                    <li className="citnk cg9hr ckscb cu781 cdq40 cre2l">
-                                        <span className="ceqx4 cm2qf cqbkb">Software Engineer, Data Platform</span>
-                                        <Link className="c1ser c4cae cm2qf c1nfs c73l4" href="#0">Remote / Europe <span className="cvpqc c18jp c4v48 cz8jp cscsd crls0">-&gt;</span></Link>
-                                    </li>
-                                    <li className="citnk cg9hr ckscb cu781 cdq40 cre2l">
-                                        <span className="ceqx4 cm2qf cqbkb">Software Engineer, Marketing Systems</span>
-                                        <Link className="c1ser c4cae cm2qf c1nfs c73l4" href="#0">Remote / North America <span className="cvpqc c18jp c4v48 cz8jp cscsd crls0">-&gt;</span></Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            {/* Marketing */}
-                            <div>
-                                <h4 className="c1ser c80q8 cpvrw cic8n cnt4i clj4z cm2qf crgfn">Marketing</h4>
-                                <ul className="c5sky cvimj">
-                                    <li className="citnk cg9hr ckscb cu781 cdq40 cre2l">
-                                        <span className="ceqx4 cm2qf cqbkb">Product Marketing Manager</span>
-                                        <Link className="c1ser c4cae cm2qf c1nfs c73l4" href="#0">Remote / North America <span className="cvpqc c18jp c4v48 cz8jp cscsd crls0">-&gt;</span></Link>
-                                    </li>
-                                    <li className="citnk cg9hr ckscb cu781 cdq40 cre2l">
-                                        <span className="ceqx4 cm2qf cqbkb">Marketing Manager</span>
-                                        <Link className="c1ser c4cae cm2qf c1nfs c73l4" href="#0">Remote / Europe <span className="cvpqc c18jp c4v48 cz8jp cscsd crls0">-&gt;</span></Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            {/* Design */}
-                            <div>
-                                <h4 className="c1ser c80q8 cpvrw cic8n cnt4i clj4z cm2qf crgfn">Design</h4>
-                                <ul className="c5sky cvimj">
-                                    <li className="citnk cg9hr ckscb cu781 cdq40 cre2l">
-                                        <span className="ceqx4 cm2qf cqbkb">Product Designer, Consumer</span>
-                                        <Link className="c1ser c4cae cm2qf c1nfs c73l4" href="#0">Remote / North America <span className="cvpqc c18jp c4v48 cz8jp cscsd crls0">-&gt;</span></Link>
-                                    </li>
-                                    <li className="citnk cg9hr ckscb cu781 cdq40 cre2l">
-                                        <span className="ceqx4 cm2qf cqbkb">Senior Product Designer</span>
-                                        <Link className="c1ser c4cae cm2qf c1nfs c73l4" href="#0">Remote / Europe <span className="cvpqc c18jp c4v48 cz8jp cscsd crls0">-&gt;</span></Link>
-                                    </li>
-                                    <li className="citnk cg9hr ckscb cu781 cdq40 cre2l">
-                                        <span className="ceqx4 cm2qf cqbkb">Lead Designer</span>
-                                        <Link className="c1ser c4cae cm2qf c1nfs c73l4" href="#0">Remote / Europe <span className="cvpqc c18jp c4v48 cz8jp cscsd crls0">-&gt;</span></Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                </div>
-
             </section>
 
             {/* Testimonials */}
@@ -719,85 +229,8 @@ const About = () => {
                 </div>
                 <div className="cxk7g c7rlc c62s6 ca7yh">
                     <div className="clyt5 ct20k">
-                        {/* Content */}
-                        <div className="cxk7g cpqxv cpwbp c0adw cjqw8" data-aos="fade-down">
-                            <h2 className="c3myr c80q8 chl73 c9p57 ch30f cnt4i c6odu crgfn">Hear from our people</h2>
-                            <p className="csqzg c16mo">Our company is comprised of people who make bold choices for our clients and the security sector. It&apos;s in our DNA to push our limits and make bold changes.</p>
-                        </div>
-                        {/* Grid */}
-                        <div className="cxk7g co6zy c0fvl cdrt8 cz8gt c3dqi can2d" data-aos="flip-right">
-                            {/* Testimonial #01 */}
-                            <div className="c4lt2 ce9r8 ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg cfqen">
-                                <div className="cmhzb citnk cta5t cu781">
-                                    <div className="citnk cta5t c4wi6">
-                                        <Image
-                                            src="https://preview.cruip.com/stellar/images/testimonial-01.png"
-                                            width={44}
-                                            height={44}
-                                            alt="Testimonial 01"
-                                        />
-                                        <div className="cih8s">
-                                            <div className="ca7kf ctzj3">Mary Janiczak</div>
-                                            <div className="c4cae cm2qf c1nfs">Data Engineer</div>
-                                        </div>
-                                    </div>
-                                    <Link className="clbq5 c5668" href="#0" aria-label="Member's Twitter">
-                                        <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                            <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                        </svg>
-                                    </Link>
-                                </div>
-                                <p className="c4cae c16mo">“The pace of change and velocity of the product force you to pick up new skills, experiment with new tactics, and walk in a variety of users&apos; shoes.”</p>
-                            </div>
-                            {/* Testimonial #02 */}
-                            <div className="c4lt2 ce9r8 ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg cfqen">
-                                <div className="cmhzb citnk cta5t cu781">
-                                    <div className="citnk cta5t c4wi6">
-                                        <Image
-                                            src="https://preview.cruip.com/stellar/images/testimonial-02.png"
-                                            width={44}
-                                            height={44}
-                                            alt="Testimonial 02"
-                                        />
-                                        <div className="cih8s">
-                                            <div className="ca7kf ctzj3">Jack Smith</div>
-                                            <div className="c4cae cm2qf c1nfs">Software Engineer</div>
-                                        </div>
-                                    </div>
-                                    <Link className="clbq5 c5668" href="#0" aria-label="Member's Twitter">
-                                        <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                            <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                        </svg>
-                                    </Link>
-                                </div>
-                                <p className="c4cae c16mo">“The pace of change and velocity of the product force you to pick up new skills, experiment with new tactics, and walk in a variety of users&apos; shoes.”</p>
-                            </div>
-                            {/* Testimonial #03 */}
-                            <div className="c4lt2 ce9r8 ckogm c8c0t czr5n ci4xg c3ftw cx51c cgakg cfqen">
-                                <div className="cmhzb citnk cta5t cu781">
-                                    <div className="citnk cta5t c4wi6">
-                                        <Image
-                                            src="https://preview.cruip.com/stellar/images/testimonial-03.png"
-                                            width={44}
-                                            height={44}
-                                            alt="Testimonial 03"
-                                        />
-                                        <div className="cih8s">
-                                            <div className="ca7kf ctzj3">Anna Johnson</div>
-                                            <div className="c4cae cm2qf c1nfs">Product Designer</div>
-                                        </div>
-                                    </div>
-                                    <Link className="clbq5 c5668" href="#0" aria-label="Member's Twitter">
-                                        <svg className="c01eg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                            <path d="M11.297 13.807 7.424 18H5.276l5.019-5.436L5 6h4.43l3.06 3.836L16.025 6h2.147l-4.688 5.084L19 18h-4.32l-3.383-4.193Zm3.975 2.975h1.19L8.783 7.155H7.507l7.766 9.627Z"></path>
-                                        </svg>
-                                    </Link>
-                                </div>
-                                <p className="c4cae c16mo">“The pace of change and velocity of the product force you to pick up new skills, experiment with new tactics, and walk in a variety of users&apos; shoes.”</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                     </div>
+</div>
             </section>
 
             {/* CTA */}

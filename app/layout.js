@@ -25,10 +25,9 @@ export default function RootLayout({ children }) {
         className={`${Inter.className} antialiased c54cm ctzj3 cp877 cbh0c c9xyi scroll-smooth`}
       >
         <div className="clfoz cxmgp cwkat cg9hr citnk">
-        {/* <Navbar /> */}
+
         {children}
-        {/* <CTA /> */}
-        {/* <Footer /> */}
+       
         </div>
       </body>
     </html>

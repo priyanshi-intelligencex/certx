@@ -25,40 +25,24 @@ export default function Home() {
 
   const clients = [
     {
-      src: "https://preview.cruip.com/stellar/images/client-01.svg",
-      alt: "Client 1",
+      src: "/customer-01white.png",
+      alt: "Customer 1",
     },
     {
-      src: "https://preview.cruip.com/stellar/images/client-02.svg",
-      alt: "Client 2",
+      src: "/customer-2white.png",
+      alt: "Customer 2",
     },
     {
-      src: "https://preview.cruip.com/stellar/images/client-03.svg",
-      alt: "Client 3",
+      src: "/customer-3white.png",
+      alt: "Customer 3",
     },
     {
-      src: "https://preview.cruip.com/stellar/images/client-04.svg",
-      alt: "Client 4",
+      src: "/customer-4white.png",
+      alt: "Customer 4",
     },
     {
-      src: "https://preview.cruip.com/stellar/images/client-05.svg",
-      alt: "Client 5",
-    },
-    {
-      src: "https://preview.cruip.com/stellar/images/client-06.svg",
-      alt: "Client 6",
-    },
-    {
-      src: "https://preview.cruip.com/stellar/images/client-07.svg",
-      alt: "Client 7",
-    },
-    {
-      src: "https://preview.cruip.com/stellar/images/client-08.svg",
-      alt: "Client 8",
-    },
-    {
-      src: "https://preview.cruip.com/stellar/images/client-09.svg",
-      alt: "Client 9",
+      src: "/customer-5white.png",
+      alt: "Customer 5",
     },
   ];
   return (
@@ -110,7 +94,7 @@ export default function Home() {
                   className="chl73 c80q8 ch30f crgfn c9p57 cnt4i c6odu cgxy0"
                   data-aos="fade-down"
                 >
-                  <span className="text-[#00ff69]">Risk</span> And Compliance
+                  <span className="text-green-400">Risk</span> And Compliance
                 </h1>
                 <p
                   className="chu7q csqzg ci5zu"
@@ -184,8 +168,9 @@ export default function Home() {
                         <Image
                           src={client.src}
                           alt={client.alt}
-                          width={100} // Adjust as needed
-                          height={100} // Adjust as needed
+                          width={100}
+                          height={100}
+                          className="brightness-0 invert"
                         />
                       </li>
                     ))}
@@ -203,6 +188,7 @@ export default function Home() {
                           alt={client.alt}
                           width={100} // Adjust as needed
                           height={100} // Adjust as needed
+                          className="brightness-0 invert"
                         />
                       </li>
                     ))}
@@ -217,7 +203,7 @@ export default function Home() {
         <Features />
         {/* Features #2 */}
 
-        <section className="c4lt2">
+        <section className="c4lt2 pt-0 mt-0">
           {/* Particles animation */}
           <div className="ca1ms cq6fz csbhs ckg9q covvq c7anr cblyu cikgi cc2rp">
             <div className="csbhs cvjd3 cblyu" aria-hidden="true">
@@ -229,24 +215,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="c7rlc ca7yh cxk7g c62s6">
-            <div className="c33zk c5dbr">
-              {/* Section header */}
-              <div
-                className="c0adw cpqxv cjqw8 cxk7g cpwbp"
-                data-aos="zoom-in-up"
-              >
-                <h2 className="chl73 c80q8 ch30f crgfn c9p57 cnt4i c6odu c3myr">
-                  Faster. Smarter.
-                </h2>
-                <p className="c16mo csqzg">
-                  There are many variations available, but the majority have
-                  suffered alteration in some form, by injected humour, or
-                  randomised words which don&apos;t look even slightly
-                  believable.
-                </p>
-              </div>
-
+          <div className="c7rlc cxk7g c62s6">
+            <div className="c33zk">
               {/* Highlighted boxes  */}
               <div className="cjqw8 c4lt2 cpwbp">
                 {/* Blurred shape */}
@@ -397,7 +367,13 @@ export default function Home() {
                               <h3 className="chl73 c80q8 ch30f crgfn c9p57 cnt4i c1ser ca7kf c50uv cx5kh">
                                 Work Smarter With Greater Impact
                               </h3>
-                              <p className="c16mo"></p>
+                              <p className="c16mo">
+                                Transform your audit, risk, IT security, and ESG
+                                programs with automation, purpose-built
+                                workflows, and advanced analytics. Experience
+                                game-changing efficiencies and drive impactful
+                                results across your organization.
+                              </p>
                             </div>
                           </div>
                           {/* Image */}
@@ -431,11 +407,14 @@ export default function Home() {
                           <div className="c5gc3 cddom clbq5 c65se ce36o c4li3 c7o7e">
                             <div>
                               <h3 className="chl73 c80q8 ch30f crgfn c9p57 cnt4i c1ser ca7kf c50uv cx5kh">
-                                Infinite options
+                                Drive Front Line Ownership
                               </h3>
                               <p className="c16mo">
-                                Quickly apply filters to refine your issues
-                                lists and create custom views.
+                                Empower your teams by building effective
+                                partnerships across your organization. Our
+                                platform offers unparalleled collaboration
+                                capabilities, ensuring front-line ownership and
+                                fostering a culture of security compliance.
                               </p>
                             </div>
                           </div>
@@ -456,97 +435,53 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Features list */}
-              <div className="cx3re c1hc0 c9xwv co6zy" data-aos="flip-down">
-                {/* Feature */}
-                <div>
-                  <div className="cta5t comlt cebxn citnk">
-                    <svg
-                      className="c21kk clbq5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                    >
-                      <path d="M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778l5.904 5.762a1 1 0 0 0 1.4 0l5.915-5.77a4.733 4.733 0 0 0-6.615-6.77Zm5.208 5.348-5.208 5.079-5.2-5.07a2.734 2.734 0 0 1 3.867-3.864c.182.19.335.404.455.638a1.04 1.04 0 0 0 1.756 0 2.724 2.724 0 0 1 5.122 1.294 2.7 2.7 0 0 1-.792 1.923Z"></path>
-                    </svg>
-                    <h4 className="cqbkb cm2qf">Filters</h4>
-                  </div>
+              {/* FAQs */}
+              <div
+                className="flex justify-between items-start w-full gap-20"
+                data-aos="flip-down"
+              >
+                {/* Left Content */}
+                <div className="w-[35%]">
+                  <h2 className="chl73 c80q8 ch30f crgfn c9p57 cnt4i c6odu c3myr">
+                    FAQs
+                  </h2>
                   <p className="c16mo c4cae">
-                    Login box must find the right balance for the user
-                    convenience, privacy and security.
+                    Trusted by industry leaders, our platform is a proven
+                    solution that supports both immediate goals and long-term
+                    strategic visions, ensuring enterprises stay ahead of the
+                    competition and achieve their full potential.
                   </p>
                 </div>
-                {/* Feature */}
+
                 <div>
                   <div className="cta5t comlt cebxn citnk">
-                    <svg
-                      className="c21kk clbq5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                    >
-                      <path d="M11 0c1.3 0 2.6.5 3.5 1.5 1 .9 1.5 2.2 1.5 3.5 0 1.3-.5 2.6-1.4 3.5l-1.2 1.2c-.2.2-.5.3-.7.3-.2 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l1.1-1.2c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.2C12 1.7 10 1.7 8.9 2.8L7.7 4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4l1.2-1.1C8.4.5 9.7 0 11 0ZM8.3 12c.4-.4 1-.5 1.4-.1.4.4.4 1 0 1.4l-1.2 1.2C7.6 15.5 6.3 16 5 16c-1.3 0-2.6-.5-3.5-1.5C.5 13.6 0 12.3 0 11c0-1.3.5-2.6 1.5-3.5l1.1-1.2c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L2.9 8.9c-.6.5-.9 1.3-.9 2.1s.3 1.6.9 2.2c1.1 1.1 3.1 1.1 4.2 0L8.3 12Zm1.1-6.8c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-4.2 4.2c-.2.2-.5.3-.7.3-.2 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l4.2-4.2Z"></path>
-                    </svg>
-                    <h4 className="cqbkb cm2qf">Configurable</h4>
+                    <h4 className="cqbkb cm2qf">
+                      What is cybersecurity risk and compliance?
+                    </h4>
+                    <span className="c4cae">›</span>
                   </div>
-                  <p className="c16mo c4cae">
-                    Login box must find the right balance for the user
-                    convenience, privacy and security.
-                  </p>
-                </div>
-                {/* Feature */}
-                <div>
+
                   <div className="cta5t comlt cebxn citnk">
-                    <svg
-                      className="c21kk clbq5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                    >
-                      <path d="M14.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8-8ZM15 7c.6 0 1 .4 1 1 0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8c.6 0 1 .4 1 1s-.4 1-1 1C4.7 2 2 4.7 2 8s2.7 6 6 6 6-2.7 6-6c0-.6.4-1 1-1Z"></path>
-                    </svg>
-                    <h4 className="cqbkb cm2qf">Authorization</h4>
+                    <h4 className="cqbkb cm2qf">
+                      Why is cybersecurity risk management important?
+                    </h4>
+                    <span className="c4cae">›</span>
                   </div>
-                  <p className="c16mo c4cae">
-                    Login box must find the right balance for the user
-                    convenience, privacy and security.
-                  </p>
-                </div>
-                {/* Feature */}
-                <div>
+
                   <div className="cta5t comlt cebxn citnk">
-                    <svg
-                      className="c21kk clbq5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                    >
-                      <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12Zm0 14V2H2v12h12Zm-3-7H5a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2Zm0 4H5a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z"></path>
-                    </svg>
-                    <h4 className="cqbkb cm2qf">Management</h4>
+                    <h4 className="cqbkb cm2qf">
+                      What are the biggest cybersecurity risks?
+                    </h4>
+                    <span className="c4cae">›</span>
                   </div>
-                  <p className="c16mo c4cae">
-                    Login box must find the right balance for the user
-                    convenience, privacy and security.
-                  </p>
-                </div>
-                {/* Feature */}
-                <div>
+
                   <div className="cta5t comlt cebxn citnk">
-                    <svg
-                      className="c21kk clbq5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                    >
-                      <path d="M14.574 5.67a13.292 13.292 0 0 1 1.298 1.842 1 1 0 0 1 0 .98C15.743 8.716 12.706 14 8 14a6.391 6.391 0 0 1-1.557-.2l1.815-1.815C10.97 11.82 13.06 9.13 13.82 8c-.163-.243-.39-.56-.669-.907l1.424-1.424ZM.294 15.706a.999.999 0 0 1-.002-1.413l2.53-2.529C1.171 10.291.197 8.615.127 8.49a.998.998 0 0 1-.002-.975C.251 7.29 3.246 2 8 2c1.331 0 2.515.431 3.548 1.038L14.293.293a.999.999 0 1 1 1.414 1.414l-14 14a.997.997 0 0 1-1.414 0ZM2.18 8a12.603 12.603 0 0 0 2.06 2.347l1.833-1.834A1.925 1.925 0 0 1 6 8a2 2 0 0 1 2-2c.178 0 .348.03.512.074l1.566-1.566C9.438 4.201 8.742 4 8 4 5.146 4 2.958 6.835 2.181 8Z"></path>
-                    </svg>
-                    <h4 className="cqbkb cm2qf">Building</h4>
+                    <h4 className="cqbkb cm2qf">
+                      What is the role of a cybersecurity risk and compliance
+                      officer?
+                    </h4>
+                    <span className="c4cae">›</span>
                   </div>
-                  <p className="c16mo c4cae">
-                    Login box must find the right balance for the user
-                    convenience, privacy and security.
-                  </p>
                 </div>
               </div>
             </div>
@@ -584,54 +519,6 @@ export default function Home() {
                 transform="matrix(1 0 0 -1 -410 427)"
               ></path>
             </svg>
-          </div>
-
-          <div className="c7rlc ca7yh cxk7g c62s6">
-            <div className="c60je cvfhv">
-              {/* Section header */}
-              <div
-                className="c0adw cpqxv cjqw8 cxk7g cpwbp"
-                data-aos="zoom-in-down"
-              >
-                <div>
-                  <div className="c80q8 crgfn cpvrw cic8n cnt4i c1ser cm2qf clj4z">
-                    The security first platform
-                  </div>
-                </div>
-                <h2 className="chl73 c80q8 ch30f crgfn c9p57 cnt4i c6odu c3myr">
-                  Spot issues faster
-                </h2>
-                <p className="c16mo csqzg">
-                  All the lorem ipsum generators on the Internet tend to repeat
-                  predefined chunks as necessary, making this the first true
-                  generator on the Internet.
-                </p>
-              </div>
-
-              <div className="cpqxv cxk7g">
-                <div data-aos="fade-down">
-                  <div className="c73l4" data-highlighter="">
-                    <div className="c834w c2dmz cgj2h cj3ir ce8dy cck46 c82g2 csey4 cjvxe cjijg crcid ccdmz c40tf csdod coafw ckogm cpspx ca3hu cxmgp c3stx cvgwp ct4qk cvu3y cmgcy czde0 c45mq cww8d cnhmh c4lt2 c2zs5">
-                      <div className="cgq9w cxmgp cp877 c4lt2 crsge cdmuy">
-                        {/*  Radial gradient */}
-                        <div
-                          className="cdzmb ca1ms chdke cq2iz cq6fz csbhs cmjk5 cvh7j cblyu"
-                          aria-hidden="true"
-                        >
-                          <div className="cje6l cg3aq ci4ze cku0c csbhs cvjd3"></div>
-                        </div>
-                        <Image
-                          src="/feature-image-04.png"
-                          width="768"
-                          height="400"
-                          alt="Feature 04"
-                        ></Image>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -715,8 +602,10 @@ export default function Home() {
                               height="56"
                               alt="Icon 01"
                             />
-                            <div className="cih8s">
-                              <div className="ca7kf csqzg cebxn">
+                            <div className="main-card">
+                              <div className="/image.png" alt="" />
+                              <div>
+                                <div className="cih8s ca7kf csqzg cebxn"></div>
                                 Complete visibility into your cyber assets
                               </div>
                               <div className="c16mo cpgza">
@@ -1155,13 +1044,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Pricing */}
-        <Pricing />
-
-        {/* Testimonials */}
-        <Testimonials />
-
         {/* CTA */}
         <CTA
           title="The security first platform"
