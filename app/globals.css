@@ -8,11 +8,11 @@ body {
 }
 
 .logo-capsule {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.92);
-  border-radius: 999px;
-  padding: 4px 14px;
+  border-radius: 10px;
+  padding: 4px 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -24,6 +24,12 @@ body {
 }
 
 /* ── Navbar pill: the floating capsule shape ── */
+.navbar-pill nav a,
+.navbar-pill nav .framework-dropdown-link {
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
 .navbar-pill {
   border-radius: 9999px;
   background: linear-gradient(
@@ -70,13 +76,19 @@ body {
 /* ── Seamless marquee ── */
 .marquee-track {
   display: flex;
+  flex-wrap: nowrap;
   width: max-content;
-  animation: marquee-seamless 40s linear infinite;
 }
 
-@keyframes marquee-seamless {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+.marquee-item {
+  flex-shrink: 0;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-item img {
+  max-width: none;
 }
 
 

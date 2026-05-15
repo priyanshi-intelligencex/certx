@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="cu781 cta5t c7uhm citnk cqxtx ">
 
           <div className="flex items-center">
-            <Link href="/" aria-label="Cruip" className="logo-capsule">
+            <Link href="/" aria-label="Certx Home" className="logo-capsule">
               <Image
                 className="cw312"
                 src="/certx-logo.png"
@@ -119,7 +119,7 @@ const Navbar = () => {
             </ul>
           </nav>
 
-          <ul className="cta5t cz2ij ceb4u citnk">
+          {/* <ul className="cta5t cz2ij ceb4u citnk">
             <li>
               <Link className="cjqnf cs6tu chu7q cz8jp cm2qf cscsd coh5f c4cae" href="/signin">
                 Sign in
@@ -136,7 +136,7 @@ const Navbar = () => {
                 </span>
               </Link>
             </li>
-          </ul>
+          </ul> */}
 
           <div className="cta5t c3odk ckq5l citnk">
             <button

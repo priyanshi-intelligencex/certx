@@ -10,21 +10,23 @@ const Footer = () => {
         {/* LEFT */}
         <div className="w-[260px]">
 
-          <Link href="/">
+          <Link href="/" className="logo-capsule mb-6">
             <Image
               src="/certx-logo.png"
               alt="CERTX"
-              width={50}
-              height={50}
-              className="mb-6"
+              width={90}
+              height={40}
             />
           </Link>
 
           <p className="text-gray-300 text-[15px] mb-12">
+            We work with you to ensure your website complies with industry regulations and best practices, minimizing the risk of data breaches, fraud, and unauthorized access by identifying potential threats and implementing effective strategies to safeguard your online presence.
+          </p>
+          <p className="text-gray-300 text-[15px] mb-12">
             © Certx.com - All rights reserved.
           </p>
 
-          
+
 
         </div>
 

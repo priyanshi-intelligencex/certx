@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Pricing from "@/components/Pricing";
@@ -19,11 +19,35 @@ import { Pagination } from "swiper/modules";
 
 export default function Home() {
   useEffect(() => {
-    AOS.init(); // Initialize AOS
+    AOS.init();
   }, []);
+
+  const marqueeRef = useRef(null);
+  useEffect(() => {
+    const track = marqueeRef.current;
+    if (!track) return;
+    const speed = 50; // px per second
+    let pos = 0;
+    let last = null;
+    let raf;
+    const step = (ts) => {
+      if (last === null) last = ts;
+      const delta = ts - last;
+      last = ts;
+      const half = track.scrollWidth / 4;
+      pos -= (speed * delta) / 1000;
+      if (pos <= -half) pos += half;
+      track.style.transform = `translateX(${pos}px)`;
+      raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, []);
+
   const [tab, setTab] = useState("1");
 
   const clients = [
+
     {
       src: "/customer-2white.png",
       alt: "Customer 2",
@@ -108,7 +132,7 @@ export default function Home() {
                   data-aos="fade-down"
                   data-aos-delay="400"
                 >
-                  <div>
+                  {/* <div>
                     <Link
                       href="#0"
                       className="c80q8 c6hcd c7806 c83hg c4l4k cz8jp cscsd coh5f co1fu cpaw2 c73l4 cco90"
@@ -118,8 +142,8 @@ export default function Home() {
                         -&gt;
                       </span>
                     </Link>
-                  </div>
-                  <div>
+                  </div> */}
+                  {/* <div>
                     <Link
                       href="#0"
                       className="c91bb cs6tu c30sr cni0i cp877 cz8jp cscsd coh5f cpaw2 cco90"
@@ -134,7 +158,7 @@ export default function Home() {
                       </svg>
                       <span>Read the docs</span>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -157,39 +181,19 @@ export default function Home() {
             <div className="cgqta clyt5">
               <div className="cxmgp">
                 <div className="cyeq5 cxmgp cpaw2">
-                  <div className="marquee-track">
-                    {/* Clients List */}
-                    <ul className="cb1bd cwrr1 cv8zd cv6pf cta5t citnk">
-                      {clients.map((client, index) => (
-                        <li key={`client-${index}`}>
-                          <Image
-                            src={client.src}
-                            alt={client.alt}
-                            width={100}
-                            height={100}
-                            className="brightness-0 invert"
-                          />
-                        </li>
-                      ))}
-                    </ul>
-
-                    {/* Duplicated Clients List for seamless loop */}
-                    <ul
-                      className="cb1bd cwrr1 cv8zd cv6pf cta5t citnk"
-                      aria-hidden="true"
-                    >
-                      {clients.map((client, index) => (
-                        <li key={`client-duplicate-${index}`}>
-                          <Image
-                            src={client.src}
-                            alt={client.alt}
-                            width={100}
-                            height={100}
-                            className="brightness-0 invert"
-                          />
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="marquee-track" ref={marqueeRef}>
+                    {[...clients, ...clients, ...clients, ...clients].map((client, index) => (
+                      <div key={index} className="marquee-item">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={client.src}
+                          alt={index < clients.length ? client.alt : ""}
+                          width={100}
+                          height={100}
+                          className="brightness-0 invert"
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -318,7 +322,7 @@ export default function Home() {
                                 </p>
                               </div>
                             </div>
-                            <div>
+                            {/* <div>
                               <Link
                                 className="cjg8t ce8dy cjhxf ccdmz cs6tu ckogm c8c0t chu7q cz8jp cscsd coh5f c4lt2 c36y6 c73l4"
                                 href="#0"
@@ -330,7 +334,7 @@ export default function Home() {
                                   </span>
                                 </span>
                               </Link>
-                            </div>
+                            </div> */}
                           </div>
                           {/* Image */}
                           <div className="cxmgp ctb00 c4lt2 cpaw2 cz52t">
@@ -613,7 +617,7 @@ export default function Home() {
                                 vulnerabilities, IAM policies, and more.
                               </div>
                             </div>
-                            <div className="c5kou">
+                            {/* <div className="c5kou">
                               <Link
                                 className="cs6tu chu7q cta5t cz8jp c1ser cm2qf cscsd coh5f c4cae c73l4"
                                 href="#0"
@@ -623,7 +627,7 @@ export default function Home() {
                                   -&gt;
                                 </span>
                               </Link>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -667,7 +671,7 @@ export default function Home() {
                                 track mitigation tasks.
                               </div>
                             </div>
-                            <div className="c5kou">
+                            {/* <div className="c5kou">
                               <Link
                                 className="cs6tu chu7q cta5t cz8jp c1ser cm2qf cscsd coh5f c4cae c73l4"
                                 href="#0"
@@ -677,7 +681,7 @@ export default function Home() {
                                   -&gt;
                                 </span>
                               </Link>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -720,7 +724,7 @@ export default function Home() {
                                 auto-remediate from the Certx platform.
                               </div>
                             </div>
-                            <div className="c5kou">
+                            {/* <div className="c5kou">
                               <Link
                                 className="cs6tu chu7q cta5t cz8jp c1ser cm2qf cscsd coh5f c4cae c73l4"
                                 href="#0"
@@ -730,7 +734,7 @@ export default function Home() {
                                   -&gt;
                                 </span>
                               </Link>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -774,7 +778,7 @@ export default function Home() {
                                 platform.
                               </div>
                             </div>
-                            <div className="c5kou">
+                            {/* <div className="c5kou">
                               <Link
                                 className="cs6tu chu7q cta5t cz8jp c1ser cm2qf cscsd coh5f c4cae c73l4"
                                 href="#0"
@@ -784,7 +788,7 @@ export default function Home() {
                                   -&gt;
                                 </span>
                               </Link>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>

@@ -67,14 +67,14 @@ const CTA = (props) => {
               <div>
                 {/* retrieve externel code from props if it exists */}
                 {props.externalCode}
-                <Link href="#0">
+                {/* <Link href="#0">
                   <div className="c80q8 c6hcd c7806 c83hg c4l4k cz8jp cscsd coh5f co1fu c73l4 cco90">
                     {props.buttonText}
                     <span className="crls0 c4v48 c18jp c1nfs cz8jp cscsd cvpqc">
                       -&gt;
                     </span>
                   </div>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
