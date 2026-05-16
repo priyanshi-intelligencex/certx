@@ -34,12 +34,12 @@ body {
   border-radius: 9999px;
   background: linear-gradient(
     90deg,
-    rgba(16, 185, 129, 0.08) 0%,
-    rgba(15, 16, 20, 0.72) 50%,
-    rgba(59, 130, 246, 0.08) 100%
+    rgb(16, 120, 90) 0%,
+    rgb(15, 16, 20) 50%,
+    rgb(30, 60, 130) 100%
   );
-  backdrop-filter: blur(14px) saturate(160%);
-  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow:
     0 2px 20px rgba(0, 0, 0, 0.25),
@@ -54,13 +54,13 @@ body {
 .navbar-pill-scrolled {
   background: linear-gradient(
     90deg,
-    rgba(16, 185, 129, 0.14) 0%,
-    rgba(10, 14, 20, 0.88) 50%,
-    rgba(59, 130, 246, 0.14) 100%
+    rgb(16, 140, 100) 0%,
+    rgb(10, 14, 20) 50%,
+    rgb(35, 70, 150) 100%
   );
-  backdrop-filter: blur(26px) saturate(200%);
-  -webkit-backdrop-filter: blur(26px) saturate(200%);
-  border-color: rgba(16, 185, 129, 0.22);
+  backdrop-filter: blur(30px) saturate(220%);
+  -webkit-backdrop-filter: blur(30px) saturate(220%);
+  border-color: rgba(16, 185, 129, 0.3);
   box-shadow:
     0 4px 32px rgba(0, 0, 0, 0.38),
     inset 0 1px 0 rgba(255, 255, 255, 0.09);
@@ -69,7 +69,7 @@ body {
 @supports not (backdrop-filter: blur(1px)) {
   .navbar-pill,
   .navbar-pill-scrolled {
-    background: rgba(10, 14, 23, 0.95);
+    background: rgb(10, 14, 23);
   }
 }
 
