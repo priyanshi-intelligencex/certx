@@ -3,83 +3,94 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111827] text-white py-8">
+    <footer className="bg-[#111827] text-white py-12">
 
-      <div className="max-w-6xl mx-auto px-10 flex items-start justify-between gap-12">
+      <div className="max-w-6xl mx-auto px-6 sm:px-10">
 
-        {/* LEFT */}
-        <div className="w-[260px]">
+        {/* Main row: stacks on mobile, side-by-side on large screens */}
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-12">
 
-          <Link href="/" className="logo-capsule mb-6">
-            <Image
-              src="/certx-logo.png"
-              alt="CERTX"
-              width={90}
-              height={40}
+          {/* LEFT — logo + description + copyright */}
+          <div className="w-full lg:w-[260px] shrink-0">
+
+            <Link href="/" className="logo-capsule inline-flex">
+              <Image
+                src="/certx-logo.png"
+                alt="CERTX"
+                width={90}
+                height={40}
+              />
+            </Link>
+
+            <p className="text-gray-300 text-[15px] mt-5 leading-relaxed">
+              We work with you to ensure your website complies with industry
+              regulations and best practices, minimizing the risk of data
+              breaches, fraud, and unauthorized access by identifying potential
+              threats and implementing effective strategies to safeguard your
+              online presence.
+            </p>
+
+          </div>
+
+          {/* RIGHT — 2-col on mobile/tablet, 4-col on sm+ */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-12 w-full lg:w-auto">
+
+            {/* FRAMEWORK */}
+            <FooterColumn
+              title="Framework"
+              links={[
+                { name: "CCPA", href: "/framework/ccpa" },
+                { name: "COSO", href: "/framework/coso" },
+                { name: "GDPR", href: "/framework/gdpr" },
+                { name: "HIPAA", href: "/framework/hipaa" },
+                { name: "ISO", href: "/framework/iso" },
+              ]}
             />
-          </Link>
 
-          <p className="text-gray-300 text-[15px] mb-12">
-            We work with you to ensure your website complies with industry regulations and best practices, minimizing the risk of data breaches, fraud, and unauthorized access by identifying potential threats and implementing effective strategies to safeguard your online presence.
-          </p>
-          <p className="text-gray-300 text-[15px] mb-12">
-            © Certx.com - All rights reserved.
-          </p>
+            {/* INDUSTRY */}
+            <FooterColumn
+              title="Industry"
+              links={[
+                { name: "Banking & Finance", href: "/industry/banking-finance" },
+                { name: "Healthcare", href: "/industry/healthcare" },
+                { name: "Insurance", href: "/industry/insurance" },
+                { name: "Technology", href: "/industry/technology" },
+              ]}
+            />
 
+            {/* MENU */}
+            <FooterColumn
+              title="Menu"
+              links={[
+                { name: "Home", href: "/" },
+                { name: "About", href: "/about" },
+                { name: "Framework", href: "/framework" },
+                { name: "Industry", href: "/industry" },
+              ]}
+            />
 
+            {/* COMPANY */}
+            <FooterColumn
+              title="Company"
+              links={[
+                { name: "Privacy Policy", href: "/privacy-policy" },
+                { name: "California Privacy", href: "/california-privacy-policy" },
+                { name: "Terms & Conditions", href: "/terms-conditions" },
+                { name: "Copyright Policy", href: "/copyright-policy" },
+                { name: "DPA", href: "/dpa" },
+                { name: "Data Deletion", href: "/data-deletion-form" },
+              ]}
+            />
+
+          </div>
 
         </div>
 
-        {/* RIGHT COLUMNS */}
-        <div className="flex gap-16">
-
-          {/* FRAMEWORK */}
-          <FooterColumn
-            title="Framework"
-            links={[
-              { name: "CCPA", href: "/framework/ccpa" },
-              { name: "COSO", href: "/framework/coso" },
-              { name: "GDPR", href: "/framework/gdpr" },
-              { name: "HIPAA", href: "/framework/hipaa" },
-              { name: "ISO", href: "/framework/iso" },
-            ]}
-          />
-
-          {/* INDUSTRY */}
-          <FooterColumn
-            title="Industry"
-            links={[
-              { name: "Banking & Finance", href: "/industry/banking-finance" },
-              { name: "Healthcare", href: "/industry/healthcare" },
-              { name: "Insurance", href: "/industry/insurance" },
-              { name: "Technology", href: "/industry/technology" },
-            ]}
-          />
-
-          {/* MENU */}
-          <FooterColumn
-            title="Menu"
-            links={[
-              { name: "Home", href: "/" },
-              { name: "About", href: "/about" },
-              { name: "Framework", href: "/framework" },
-              { name: "Industry", href: "/industry" },
-            ]}
-          />
-
-          {/* COMPANY */}
-          <FooterColumn
-            title="Company"
-            links={[
-              { name: "Privacy Policy", href: "/privacy-policy" },
-              { name: "California Privacy Policy", href: "/california-privacy-policy" },
-              { name: "Terms & Conditions", href: "/terms-conditions" },
-              { name: "Copyright Policy", href: "/copyright-policy" },
-              { name: "DPA", href: "/dpa" },
-              { name: "Data Deletion Form", href: "/data-deletion-form" },
-            ]}
-          />
-
+        {/* Bottom bar — full width, sits at the very end */}
+        <div className="mt-10 pt-6 border-t border-gray-700 text-center">
+          <p className="text-gray-400 text-sm">
+            © Certx.com — All rights reserved.
+          </p>
         </div>
 
       </div>
@@ -90,27 +101,23 @@ const Footer = () => {
 
 const FooterColumn = ({ title, links }) => {
   return (
-    <div className="min-w-[130px]">
+    <div>
 
-      <h3 className="text-[15px] font-semibold mb-4">
+      <h3 className="text-[15px] font-semibold mb-4 text-white">
         {title}
       </h3>
 
       <ul className="space-y-3">
-
         {links.map((item) => (
           <li key={item.name}>
-
             <Link
               href={item.href}
-              className="text-gray-400 text-[15px] hover:text-white transition"
+              className="text-gray-400 text-[14px] hover:text-white transition-colors leading-snug"
             >
               {item.name}
             </Link>
-
           </li>
         ))}
-
       </ul>
 
     </div>

@@ -5132,13 +5132,56 @@ input[type="search"]::-webkit-search-results-decoration {
     background: rgb(255 255 255 / 10%);
 }
 
-.mobile-framework-title {
-    font-weight: 500;
+/* Mobile nav: hidden by default, scrollable when open */
+.mobile-nav {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.25s ease;
 }
 
+.mobile-nav--open {
+    max-height: calc(100dvh - 90px);
+    overflow-y: auto;
+    opacity: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile accordion button (Framework / Industry) */
+.mobile-accordion-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.mobile-accordion-arrow {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+    color: currentColor;
+}
+
+.mobile-accordion-arrow.open {
+    transform: rotate(180deg);
+}
+
+/* Sub-menu: hidden by default, visible when .mobile-accordion-open */
 .mobile-framework-menu {
-    margin-top: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
     padding-left: 1rem;
+    transition: max-height 0.3s ease;
+}
+
+.mobile-framework-menu.mobile-accordion-open {
+    max-height: 500px;
+    margin-top: 0.5rem;
 }
 
 .mobile-framework-menu li {
@@ -5154,7 +5197,12 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 1.5715;
     font-weight: 500;
     color: rgb(226 232 240);
-} 
+}
+
+.mobile-framework-menu a:hover {
+    color: #ffffff;
+}
+
 .framework-page {
     position: relative;
     overflow: hidden;

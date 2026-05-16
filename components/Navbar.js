@@ -3,10 +3,20 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [frameworkOpen, setFrameworkOpen] = useState(false);
+  const [industryOpen, setIndustryOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setFrameworkOpen(false);
+    setIndustryOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -156,8 +166,8 @@ const Navbar = () => {
 
             <nav
               id="mobile-nav"
-              className={`cxmgp ctukp cccm5 cscsd csbhs cmint ca7yh cr8kn cpaw2 cdmuy c62s6 ${
-                isMobileMenuOpen ? "opacity-100" : "max-h-0 opacity-80"
+              className={`mobile-nav cxmgp ctukp cccm5 cscsd csbhs cmint ca7yh cr8kn cpaw2 cdmuy c62s6${
+                isMobileMenuOpen ? " mobile-nav--open" : ""
               }`}
             >
               <ul className="cjg8t cn0tc c6nee clat9 cb919 c62s6">
@@ -174,12 +184,30 @@ const Navbar = () => {
                   </Link>
                 </li>
 
+                {/* Framework accordion */}
                 <li>
-                  <div className="cs6tu chu7q cm2qf clat9 c4cae citnk mobile-framework-title">
+                  <button
+                    className="mobile-accordion-btn cs6tu chu7q cm2qf clat9 c4cae citnk"
+                    onClick={() => setFrameworkOpen(!frameworkOpen)}
+                    aria-expanded={frameworkOpen}
+                  >
                     Framework
-                  </div>
-
-                  <ul className="mobile-framework-menu">
+                    <svg
+                      className={`mobile-accordion-arrow${frameworkOpen ? " open" : ""}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  <ul className={`mobile-framework-menu${frameworkOpen ? " mobile-accordion-open" : ""}`}>
                     {frameworkItems.map((item) => (
                       <li key={item.name}>
                         <Link href={item.href}>{item.name}</Link>
@@ -188,12 +216,30 @@ const Navbar = () => {
                   </ul>
                 </li>
 
+                {/* Industry accordion */}
                 <li>
-                  <div className="cs6tu chu7q cm2qf clat9 c4cae citnk mobile-framework-title">
+                  <button
+                    className="mobile-accordion-btn cs6tu chu7q cm2qf clat9 c4cae citnk"
+                    onClick={() => setIndustryOpen(!industryOpen)}
+                    aria-expanded={industryOpen}
+                  >
                     Industry
-                  </div>
-
-                  <ul className="mobile-framework-menu">
+                    <svg
+                      className={`mobile-accordion-arrow${industryOpen ? " open" : ""}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  <ul className={`mobile-framework-menu${industryOpen ? " mobile-accordion-open" : ""}`}>
                     {industryItems.map((item) => (
                       <li key={item.name}>
                         <Link href={item.href}>{item.name}</Link>
@@ -208,11 +254,6 @@ const Navbar = () => {
                   </Link>
                 </li>
 
-                <li>
-                  <Link className="cs6tu chu7q cm2qf clat9 c4cae citnk" href="/changelog">
-                    Changelog
-                  </Link>
-                </li>
 
               </ul>
             </nav>
