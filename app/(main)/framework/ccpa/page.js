@@ -34,14 +34,14 @@ const CCPA = () => {
         <main className="framework-page">
 
             {/* Hero Section */}
-            <section className="framework-hero py-20 md:py-24">
+            <section className="framework-hero">
                 <div className="framework-container">
 
                     <h1>
                         CCPA (California Consumer Privacy Act)
                     </h1>
 
-                    <p className="mt-6">
+                    <p>
                         The <strong>California Consumer Privacy Act (CCPA)</strong>
                         is a privacy law that gives California residents greater
                         control over their personal information and how businesses
@@ -52,50 +52,46 @@ const CCPA = () => {
             </section>
 
             {/* Sections */}
-            <div className="flex flex-col gap-16 md:gap-20">
+            {sections.map((section, index) => (
+                <section
+                    key={section.title}
+                    className={`framework-section ${
+                        index % 2 !== 0
+                            ? "framework-section-reverse"
+                            : ""
+                    }`}
+                >
 
-                {sections.map((section, index) => (
-                    <section
-                        key={section.title}
-                        className={`framework-section ${
-                            index % 2 !== 0
-                                ? "framework-section-reverse"
-                                : ""
-                        }`}
-                    >
+                    <div className="framework-container framework-grid items-center">
 
-                        <div className="framework-container framework-grid items-center">
+                        {/* Image */}
+                        <div className="framework-image">
+                            <Image
+                                src={section.image}
+                                alt={section.title}
+                                width={560}
+                                height={420}
+                                className="w-full h-auto object-contain"
+                            />
+                        </div>
 
-                            {/* Image */}
-                            <div className="framework-image">
-                                <Image
-                                    src={section.image}
-                                    alt={section.title}
-                                    width={560}
-                                    height={420}
-                                    className="w-full h-auto object-contain"
-                                />
-                            </div>
+                        {/* Content */}
+                        <div className="framework-content">
 
-                            {/* Content */}
-                            <div className="framework-content">
+                            <h2>
+                                {section.title}
+                            </h2>
 
-                                <h2>
-                                    {section.title}
-                                </h2>
-
-                                <p className="mt-5">
-                                    {section.text}
-                                </p>
-
-                            </div>
+                            <p>
+                                {section.text}
+                            </p>
 
                         </div>
 
-                    </section>
-                ))}
+                    </div>
 
-            </div>
+                </section>
+            ))}
 
         </main>
     );

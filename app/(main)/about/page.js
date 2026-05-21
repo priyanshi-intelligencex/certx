@@ -12,7 +12,7 @@ const About = () => {
     }, []);
 
     return (
-        <main className="cih8s">
+        <main className="about-page cih8s">
 
             {/* Hero */}
             <section className="c4lt2">
@@ -39,26 +39,15 @@ const About = () => {
                         {/* Hero content */}
                         <div className="c0adw" data-aos="fade-down">
                             <div className="c1ser c80q8 cpvrw cic8n cnt4i clj4z cm2qf crgfn"></div>
-                            <h1 className="cgxy0 c80q8 chl73 c9p57 ch30f cnt4i cwyf6 crgfn">Turning security into innovation</h1>
+                          
                             {/* Rings illustration */}
                             <div className="c4lt2 c1ser cta5t cv6pf" data-aos="zoom-in">
                                 {/* Particles animation */}
                                 <div className="csbhs cvjd3 cblyu" aria-hidden="true">
                                     <canvas data-particle-animation="" data-particle-quantity="10"></canvas>
                                 </div>
-                                <div className="c1ser c0grr">
-                                    <Image src="/about-illustration.svg"
-                                        width={446}
-                                        height={446}
-                                        alt="About illustration"
-                                    />
-                                </div>
-                                <Image className="csbhs cwrrk c3708 cxbvz"
-                                    src="/about-icon.svg"
-                                    width={72}
-                                    height={72}
-                                    alt="About icon" 
-                                />
+                               
+                              
                             </div>
                         </div>
 
@@ -201,7 +190,7 @@ const About = () => {
                 </div>
 
                 {/* Positions */}
-                <div className="c4lt2 c62s6 ca7yh">
+                <div className="about-empty-spacer c4lt2 c62s6 ca7yh">
 
                     {/* Blurred shape */}
                     <div className="cdzmb csbhs cq6fz c7anr cl53t ca1ms cmnpl czct6 c7v3c" aria-hidden="true">
@@ -220,7 +209,7 @@ const About = () => {
             </section>
 
             {/* Testimonials */}
-            <section className="c4lt2">
+            <section className="about-empty-spacer c4lt2">
                 {/* Radial gradient */}
                 <div className="cdzmb csbhs cvjd3 cblyu cxmgp" aria-hidden="true">
                     <div className="csbhs cq6fz c7anr citnk cq2iz cu6vf ca1ms ch3pd cta5t cv6pf">
