@@ -11,27 +11,27 @@ const Manufacturing = () => {
         {
             title: "Strategically Plan and Outline Audits",
             text: "Get a comprehensive view of all auditable entities, along with their respective metrics and risk factors, in one central dashboard. Conduct flexible risk evaluations, identify any gaps in audit coverage, and create a targeted, effective audit strategy based on insights.",
-            image: "/manufacturing.png",
+            image: "/manufacturing1.png",
         },
         {
             title: "Seamlessly Navigate Framework Compliance",
             text: "Link risks, controls, and requirements across multiple frameworks and standards. Eliminate repetitive tasks by detecting overlapping controls, and streamline your compliance efforts by automatically integrating new framework updates with your existing control structures.",
-            image: "/manufacturing.png",
+            image: "/manufacturing2.png",
         },
         {
             title: "Simplify Issue Tracking and Resolution",
             text: "Automate the management of audit issues and reports. Instantly identify problems during audits, assign responsibility for remediation, and track resolution progress. Automatically generate detailed, management-ready audit reports for efficient communication of findings.",
-            image: "/manufacturing.png",
+            image: "/manufacturing3.png",
         },
         {
             title: "Enhance Efficiency with Real-Time Monitoring",
             text: "Maintain real-time oversight of assets, risks, and controls, allowing for immediate identification of emerging threats or gaps. Adjust audit plans dynamically and streamline compliance actions with up-to-the-minute data, ensuring a proactive approach to security and regulatory adherence.",
-            image: "/manufacturing.png",
+            image: "/manufacturing4.png",
         },
     ];
 
     return (
-        <main className="framework-page">
+        <main className="manufacturing-page framework-page">
 
             {/* Hero Section */}
             <section className="framework-hero">
@@ -72,6 +72,8 @@ const Manufacturing = () => {
                                 alt={section.title}
                                 width={560}
                                 height={420}
+                                className="manufacturing-section-image"
+                                unoptimized
                             />
                         </div>
 

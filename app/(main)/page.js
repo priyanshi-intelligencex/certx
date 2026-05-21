@@ -66,10 +66,10 @@ export default function Home() {
     },
   ];
   return (
-    <main className="cih8s ">
+    <main className="home-page cih8s">
       <div className="clfoz cxmgp cwkat cg9hr citnk">
         {/* Hero */}
-        <section>
+        <section className="home-hero c4lt2">
           <div className="c7rlc c4lt2 ca7yh cxk7g c62s6">
             {/* Particles animation */}
             <div className="csbhs cvjd3 cblyu" aria-hidden="true">
@@ -78,13 +78,13 @@ export default function Home() {
 
             {/* Illustration */}
             <div
-              className="cdzmb ckqbz cxmgp csbhs cvjd3 ca0nu cblyu"
+              className="home-hero-bg cdzmb ckqbz cxmgp csbhs cvjd3 ca0nu"
               aria-hidden="true"
             >
-              <div className="ca1ms cq6fz csbhs cmjk5 cblyu">
+              <div className="home-hero-bg-image ca1ms cq6fz csbhs cmjk5">
                 <Image
-                  src="/glow-bottom.svg"
-                  className="cw312"
+                  src="/glow-bottom.png"
+                  className="home-hero-image cw312"
                   width={2146}
                   height={774}
                   alt="Hero Illustration"
@@ -92,7 +92,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="cewgk cyuy9 cld13 c8230">
+            <div className="home-hero-content cewgk cyuy9 cld13 c8230">
               {/* Hero content */}
               <div className="c0adw cpqxv cxk7g">
                 <div className="co2so" data-aos="fade-down">
