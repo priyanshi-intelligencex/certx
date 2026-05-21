@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "CCPA Compliance Management",
+  description:
+    "Manage California Consumer Privacy Act (CCPA) compliance with CertX. Automate data subject rights workflows, track consumer requests, and maintain audit-ready documentation.",
+  alternates: { canonical: "https://certx.com/framework/ccpa" },
+};
+
 const CCPA = () => {
 
     const sections = [

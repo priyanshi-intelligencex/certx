@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "HIPAA Compliance Automation",
+  description:
+    "Automate HIPAA compliance for healthcare organizations with CertX. Manage PHI safeguards, conduct risk assessments, track breach notifications, and ensure continuous compliance.",
+  alternates: { canonical: "https://certx.com/framework/hipaa" },
+};
+
 const HIPAA = () => {
 
     const sections = [

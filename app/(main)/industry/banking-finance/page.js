@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Banking & Finance GRC Compliance",
+  description:
+    "Strengthen banking and financial services compliance with CertX. Automate audit efficiency, control testing, key risk indicators, and unified GRC for regulatory adherence.",
+  alternates: { canonical: "https://certx.com/industry/banking-finance" },
+};
+
 const BankingFinance = () => {
 
     const sections = [

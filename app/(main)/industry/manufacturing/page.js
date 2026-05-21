@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Manufacturing Compliance & Operational Risk",
+  description:
+    "Strengthen manufacturing compliance and operational risk management with CertX. Automate supply chain risk, ISO compliance, and security governance across your manufacturing operations.",
+  alternates: { canonical: "https://certx.com/industry/manufacturing" },
+};
+
 const Manufacturing = () => {
 
     const sections = [

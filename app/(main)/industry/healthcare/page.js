@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Healthcare Compliance & HIPAA Risk Management",
+  description:
+    "Simplify healthcare compliance with CertX. Automate HIPAA policy management, PHI risk assessments, vendor compliance, and audit workflows to protect patient data.",
+  alternates: { canonical: "https://certx.com/industry/healthcare" },
+};
+
 const Healthcare = () => {
 
     const sections = [

@@ -45,6 +45,26 @@ export default function Home() {
   }, []);
 
   const [tab, setTab] = useState("1");
+  const [openFaq, setOpenFaq] = useState(null);
+
+  const faqs = [
+    {
+      q: "What is cybersecurity risk and compliance?",
+      a: "Cybersecurity risk and compliance refers to identifying, assessing, and managing potential threats to digital assets while ensuring adherence to industry regulations and security frameworks such as NIST, SOC 2, HIPAA, GDPR, and ISO 27001.",
+    },
+    {
+      q: "Why is cybersecurity risk management important?",
+      a: "Effective cybersecurity risk management protects organizations from data breaches, financial losses, and reputational damage by proactively identifying and mitigating vulnerabilities before they can be exploited by threat actors.",
+    },
+    {
+      q: "What are the biggest cybersecurity risks?",
+      a: "The most significant cybersecurity risks include ransomware attacks, phishing and social engineering, insider threats, third-party vendor vulnerabilities, cloud misconfigurations, and unpatched software weaknesses.",
+    },
+    {
+      q: "What is the role of a cybersecurity risk and compliance officer?",
+      a: "A cybersecurity risk and compliance officer develops security policies, oversees regulatory compliance programs, conducts risk assessments, and ensures adherence to frameworks like NIST, SOC 2, HIPAA, and ISO 27001 across the organization.",
+    },
+  ];
 
   const clients = [
 
@@ -87,7 +107,8 @@ export default function Home() {
                   className="home-hero-image cw312"
                   width={2146}
                   height={774}
-                  alt="Hero Illustration"
+                  alt="CertX GRC Platform Hero Background"
+                  priority
                 />
               </div>
             </div>
@@ -114,7 +135,7 @@ export default function Home() {
                   className="chl73 c80q8 ch30f crgfn c9p57 cnt4i c6odu cgxy0"
                   data-aos="fade-down"
                 >
-                  <span className="text-blue-800">Risk</span> And Compliance
+                 Risk And Compliance
                 </h1>
                 <p
                   className="chu7q csqzg ci5zu"
@@ -339,12 +360,13 @@ export default function Home() {
                           {/* Image */}
                           <div className="cxmgp ctb00 c4lt2 cpaw2 cz52t">
                             <Image
-                              className="ca1ms cvkzz crepj cw312 c386c cq6fz csbhs cmjk5 cxk7g "
+                              className="ca1ms cvkzz crepj cw312 c386c cq6fz csbhs cmjk5 cxk7g"
                               src="/feature-image-01.png"
                               width="504"
                               height="400"
-                              alt="Feature 01"
-                            ></Image>
+                              alt="Surface and manage risk across your organization"
+                              loading="lazy"
+                            />
                           </div>
                         </div>
                       </div>
@@ -385,8 +407,9 @@ export default function Home() {
                               src="/feature-image-02.png"
                               width="536"
                               height="230"
-                              alt="Feature 02"
-                            ></Image>
+                              alt="Work smarter with automation and analytics"
+                              loading="lazy"
+                            />
                           </div>
                         </div>
                       </div>
@@ -427,8 +450,9 @@ export default function Home() {
                               src="/feature-image-03.png"
                               width="230"
                               height="230"
-                              alt="Feature 03"
-                            ></Image>
+                              alt="Drive front-line ownership and collaboration"
+                              loading="lazy"
+                            />
                           </div>
                         </div>
                       </div>
@@ -439,11 +463,12 @@ export default function Home() {
 
               {/* FAQs */}
               <div
-                className="flex justify-between items-start w-full gap-20"
+                className="faq-section-outer"
                 data-aos="flip-down"
+                aria-label="Frequently Asked Questions"
               >
                 {/* Left Content */}
-                <div className="w-[35%]">
+                <div className="faq-left">
                   <h2 className="chl73 c80q8 ch30f crgfn c9p57 cnt4i c6odu c3myr">
                     FAQs
                   </h2>
@@ -455,35 +480,34 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div>
-                  <div className="cta5t comlt cebxn citnk">
-                    <h4 className="cqbkb cm2qf">
-                      What is cybersecurity risk and compliance?
-                    </h4>
-                    <span className="c4cae">›</span>
-                  </div>
-
-                  <div className="cta5t comlt cebxn citnk">
-                    <h4 className="cqbkb cm2qf">
-                      Why is cybersecurity risk management important?
-                    </h4>
-                    <span className="c4cae">›</span>
-                  </div>
-
-                  <div className="cta5t comlt cebxn citnk">
-                    <h4 className="cqbkb cm2qf">
-                      What are the biggest cybersecurity risks?
-                    </h4>
-                    <span className="c4cae">›</span>
-                  </div>
-
-                  <div className="cta5t comlt cebxn citnk">
-                    <h4 className="cqbkb cm2qf">
-                      What is the role of a cybersecurity risk and compliance
-                      officer?
-                    </h4>
-                    <span className="c4cae">›</span>
-                  </div>
+                <div className="faq-right faq-accordion" role="list">
+                  {faqs.map((faq, i) => (
+                    <div key={i} className="faq-item" role="listitem">
+                      <button
+                        className="faq-trigger cta5t comlt cebxn citnk"
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                        aria-expanded={openFaq === i}
+                        id={`faq-btn-${i}`}
+                        aria-controls={`faq-content-${i}`}
+                      >
+                        <h4 className="cqbkb cm2qf">{faq.q}</h4>
+                        <span
+                          className={`faq-icon c4cae${openFaq === i ? " faq-icon-open" : ""}`}
+                          aria-hidden="true"
+                        >
+                          ›
+                        </span>
+                      </button>
+                      <div
+                        id={`faq-content-${i}`}
+                        role="region"
+                        aria-labelledby={`faq-btn-${i}`}
+                        className={`faq-answer${openFaq === i ? " faq-answer-open" : ""}`}
+                      >
+                        <p className="c16mo c4cae">{faq.a}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -602,7 +626,8 @@ export default function Home() {
                               src="https://preview.cruip.com/stellar/images/carousel-icon-01.svg"
                               width="56"
                               height="56"
-                              alt="Icon 01"
+                              alt="Complete cyber asset visibility icon"
+                              loading="lazy"
                             />
                             <div className="main-card">
                               <div className="/image.png" alt="" />
@@ -617,17 +642,6 @@ export default function Home() {
                                 vulnerabilities, IAM policies, and more.
                               </div>
                             </div>
-                            {/* <div className="c5kou">
-                              <Link
-                                className="cs6tu chu7q cta5t cz8jp c1ser cm2qf cscsd coh5f c4cae c73l4"
-                                href="#0"
-                              >
-                                Learn More{" "}
-                                <span className="crls0 c4v48 c18jp c1nfs cz8jp cscsd cvpqc">
-                                  -&gt;
-                                </span>
-                              </Link>
-                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -658,7 +672,8 @@ export default function Home() {
                               src="https://preview.cruip.com/stellar/images/carousel-icon-02.svg"
                               width="56"
                               height="56"
-                              alt="Icon 02"
+                              alt="Manage InfoSec risks icon"
+                              loading="lazy"
                             />
                             <div className="cih8s">
                               <div className="ca7kf csqzg cebxn">
@@ -671,17 +686,6 @@ export default function Home() {
                                 track mitigation tasks.
                               </div>
                             </div>
-                            {/* <div className="c5kou">
-                              <Link
-                                className="cs6tu chu7q cta5t cz8jp c1ser cm2qf cscsd coh5f c4cae c73l4"
-                                href="#0"
-                              >
-                                Learn More{" "}
-                                <span className="crls0 c4v48 c18jp c1nfs cz8jp cscsd cvpqc">
-                                  -&gt;
-                                </span>
-                              </Link>
-                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -712,7 +716,8 @@ export default function Home() {
                               src="https://preview.cruip.com/stellar/images/carousel-icon-03.svg"
                               width="56"
                               height="56"
-                              alt="Icon 03"
+                              alt="Multi-cloud environment monitoring icon"
+                              loading="lazy"
                             />
                             <div className="cih8s">
                               <div className="ca7kf csqzg cebxn">
@@ -724,17 +729,6 @@ export default function Home() {
                                 auto-remediate from the Certx platform.
                               </div>
                             </div>
-                            {/* <div className="c5kou">
-                              <Link
-                                className="cs6tu chu7q cta5t cz8jp c1ser cm2qf cscsd coh5f c4cae c73l4"
-                                href="#0"
-                              >
-                                Learn More{" "}
-                                <span className="crls0 c4v48 c18jp c1nfs cz8jp cscsd cvpqc">
-                                  -&gt;
-                                </span>
-                              </Link>
-                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -765,7 +759,8 @@ export default function Home() {
                               src="https://preview.cruip.com/stellar/images/carousel-icon-04.svg"
                               width="56"
                               height="56"
-                              alt="Icon 04"
+                              alt="Compliance framework management icon"
+                              loading="lazy"
                             />
                             <div className="cih8s">
                               <div className="ca7kf csqzg cebxn">

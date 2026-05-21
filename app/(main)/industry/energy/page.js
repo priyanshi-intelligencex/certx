@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Energy Sector Compliance & Risk Management",
+  description:
+    "Manage cybersecurity risk and regulatory compliance for energy organizations with CertX. Protect critical infrastructure and meet NERC CIP and other energy sector regulatory requirements.",
+  alternates: { canonical: "https://certx.com/industry/energy" },
+};
+
 const Energy = () => {
 
     const sections = [

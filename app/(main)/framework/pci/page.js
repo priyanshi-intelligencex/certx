@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "PCI DSS Compliance Automation",
+  description:
+    "Simplify PCI DSS compliance with CertX. Automate cardholder data environment scoping, control testing, evidence collection, and continuous monitoring to protect payment data.",
+  alternates: { canonical: "https://certx.com/framework/pci" },
+};
+
 const PCI = () => {
 
     const sections = [

@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Technology Sector GRC & Cybersecurity Compliance",
+  description:
+    "Meet technology sector compliance requirements with CertX. Automate SOC 2, ISO 27001, and cloud security compliance to build customer trust and accelerate enterprise sales.",
+  alternates: { canonical: "https://certx.com/industry/technology" },
+};
+
 const Technology = () => {
 
     const sections = [

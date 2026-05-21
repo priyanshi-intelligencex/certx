@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "NIST Cybersecurity Framework Compliance",
+  description:
+    "Implement the NIST Cybersecurity Framework with CertX. Map controls, assess risks, and manage your organization's cybersecurity posture across Identify, Protect, Detect, Respond, and Recover functions.",
+  alternates: { canonical: "https://certx.com/framework/nist" },
+};
+
 const NIST = () => {
 
     const sections = [

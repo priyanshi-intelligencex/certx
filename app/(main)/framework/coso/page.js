@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "COSO Framework Compliance",
+  description:
+    "Implement the COSO Internal Control Integrated Framework with CertX. Streamline enterprise risk management, internal controls, and governance workflows across your organization.",
+  alternates: { canonical: "https://certx.com/framework/coso" },
+};
+
 const COSO = () => {
 
     const sections = [

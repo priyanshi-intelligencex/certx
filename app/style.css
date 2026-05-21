@@ -5228,7 +5228,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .home-page {
-    --home-hero-top: 4.5rem;
+    --home-hero-top: 4rem;
     --home-hero-bottom: 2.5rem;
     --home-section-y: 2.5rem;
     --home-section-header: 2rem;
@@ -5257,6 +5257,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .home-hero-bg {
     z-index: 0;
     pointer-events: none;
+    border-radius: 2rem;
+    overflow: hidden;
 }
 
 .home-hero-bg-image {
@@ -5295,6 +5297,10 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-top: var(--home-section-y);
 }
 
+.home-page .home-hero-content {
+    padding-top: var(--home-hero-top);
+}
+
 .home-page .cpwbp,
 .home-page .cjqw8 {
     padding-bottom: var(--home-section-header);
@@ -5327,7 +5333,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 @media (min-width: 768px) {
     .home-page {
-        --home-hero-top: 3.75rem;
+        --home-hero-top: 4.25rem;
         --home-hero-bottom: 2rem;
         --home-section-y: 3rem;
         --home-section-header: 2.5rem;
@@ -5438,26 +5444,47 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .framework-image {
     position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.38),
+        0 0 0 1px rgba(59, 130, 246, 0.07);
+    background: rgba(2, 6, 23, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+.framework-image:hover {
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.45),
+        0 0 0 1px rgba(59, 130, 246, 0.14);
 }
 
 .framework-image::before {
     content: "";
     position: absolute;
-    inset: -30px;
-    border-radius: 999px;
-    background:
-        radial-gradient(circle,
-            rgba(#007BFF),
-            rgba(59, 130, 246, 0.12),
-            transparent 70%);
-    filter: blur(40px);
-    z-index: -1;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(circle at center,
+        rgba(59, 130, 246, 0.10),
+        transparent 70%);
+    filter: blur(20px);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .framework-image img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.35s ease;
+}
+
+.framework-image:hover img {
+    transform: scale(1.015);
 }
 
 .manufacturing-page .framework-image {
@@ -5470,7 +5497,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .manufacturing-page .manufacturing-section-image {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     object-fit: contain;
 }
 

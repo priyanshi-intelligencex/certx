@@ -104,22 +104,6 @@ const Contact = () => {
       )}
 
       <section className="c4lt2">
-
-        {/* SAME SIGNIN PAGE ILLUSTRATION */}
-        <div
-          className="cdzmb ca1ms cxixl cq6fz cstve csbhs c7v3c cpl14 cblyu"
-          aria-hidden="true"
-        >
-          <Image
-            src="/auth-illustration.svg"
-            className="cw312"
-            width={1440}
-            height={450}
-            alt="Page Illustration"
-            priority
-          />
-        </div>
-
         <div className="c7rlc c4lt2 ca7yh cxk7g c62s6">
           <div className="cjqw8 cmma3 cpwbp c8230">
 

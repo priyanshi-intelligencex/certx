@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Telecom Compliance & Cybersecurity Risk Management",
+  description:
+    "Manage telecom regulatory compliance and cybersecurity risk with CertX. Automate FCC, CPNI, and data protection compliance workflows to protect subscriber data and critical infrastructure.",
+  alternates: { canonical: "https://certx.com/industry/telecom" },
+};
+
 const Telecom = () => {
 
     const sections = [

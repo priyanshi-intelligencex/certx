@@ -4,7 +4,16 @@
       "Bash(dir C:\\\\Users\\\\Win11\\\\Desktop\\\\certx)",
       "PowerShell(Remove-Item *)",
       "Bash(npm show *)",
-      "Bash(node -e \"const v=JSON.parse\\(require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\)\\);console.log\\('latest v4:',v.filter\\(x=>x.startsWith\\('4'\\)\\).at\\(-1\\),'latest v5:',v.filter\\(x=>x.startsWith\\('5'\\)\\).at\\(-1\\)\\)\")"
+      "Bash(node -e \"const v=JSON.parse\\(require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\)\\);console.log\\('latest v4:',v.filter\\(x=>x.startsWith\\('4'\\)\\).at\\(-1\\),'latest v5:',v.filter\\(x=>x.startsWith\\('5'\\)\\).at\\(-1\\)\\)\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Win11\\\\Desktop\\\\updated-certex\\\\certx\" -Recurse -Force)",
+      "Bash(Select-Object -Property FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(ConvertTo-Csv)",
+      "Bash(Out-String)",
+      "Bash(npx next *)",
+      "Bash(node_modules/.bin/next lint *)",
+      "Bash(node -e \"const {execSync} = require\\('child_process'\\); execSync\\('npx next build', {stdio: 'inherit', cwd: process.cwd\\(\\)}\\)\")",
+      "Bash(node -e \"const {execSync}=require\\('child_process'\\);execSync\\('npx next build',{stdio:'inherit'}\\)\")"
     ]
   }
 }

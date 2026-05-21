@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Insurance Compliance & Risk Management",
+  description:
+    "Manage insurance sector compliance and third-party risk with CertX. Automate regulatory reporting, control testing, and GRC workflows to meet NAIC and other insurance regulations.",
+  alternates: { canonical: "https://certx.com/industry/insurance" },
+};
+
 const Insurance = () => {
 
     const sections = [

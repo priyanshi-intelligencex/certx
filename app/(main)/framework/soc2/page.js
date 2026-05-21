@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "SOC 2 Compliance Automation",
+  description:
+    "Accelerate your SOC 2 audit with CertX. Automate evidence collection, control testing, policy management, and auditor collaboration to achieve SOC 2 Type I and Type II compliance faster.",
+  alternates: { canonical: "https://certx.com/framework/soc2" },
+};
+
 const SOC2 = () => {
 
     const sections = [

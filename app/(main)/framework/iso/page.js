@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "ISO 27001 Compliance Platform",
+  description:
+    "Achieve and maintain ISO 27001 certification with CertX. Automate information security management, control assessments, and continuous monitoring across your enterprise.",
+  alternates: { canonical: "https://certx.com/framework/iso" },
+};
+
 const ISO = () => {
 
     const sections = [

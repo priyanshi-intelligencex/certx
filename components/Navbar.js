@@ -46,17 +46,17 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="cpaw2 sticky top-0 z-50 navbar-outer">
+    <header className={`cpaw2 fixed top-0 left-0 right-0 z-50 navbar-outer${scrolled ? " navbar-outer-scrolled" : ""}`}>
       <div className={`c7rlc ca7yh cxk7g c62s6 navbar-pill${scrolled ? " navbar-pill-scrolled" : ""}`}>
         <div className="cu781 cta5t c7uhm citnk cqxtx ">
 
           <div className="flex items-center">
-  <Link href="/" aria-label="Certx Home">
+  <Link href="/" aria-label="CertX Home">
     <Image
       src="/certx-logo.png"
       width={100}
       height={100}
-      alt="Stellar"
+      alt="CertX — AI-Powered GRC Platform"
       className="cw312"
     />
   </Link>

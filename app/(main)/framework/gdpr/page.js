@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "GDPR Compliance Automation",
+  description:
+    "Automate General Data Protection Regulation (GDPR) compliance with CertX. Manage data protection policies, stakeholder collaboration, and audit-ready evidence collection from a single platform.",
+  alternates: { canonical: "https://certx.com/framework/gdpr" },
+};
+
 const GDPR = () => {
 
     const sections = [
