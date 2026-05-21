@@ -6,27 +6,27 @@ const NIST = () => {
         {
             title: "Enhance Your Risk Management Framework (RMF)",
             text: "Leverage an integrated platform to manage every aspect of your NIST RMF, including risk assessments, control reviews, employee policy attestations, and vendor risk management.",
-            image: "/National Institute of Standards and Technology (NIST).png",
+            image: "/Enhance Your Risk Management.png",   
         },
         {
             title: "Create and Tailor NIST Policies",
             text: "Access a robust library of pre-built NIST policies or upload your own templates to establish your organization’s compliance framework with ease.",
-            image: "/National Institute of Standards and Technology (NIST).png",
+            image: "/Create and Tailor NIST.png",
         },
         {
             title: "Train Employees for NIST Compliance",
             text: "Educate your employees on NIST compliance requirements through training modules, periodic testing, and simulated anti-phishing exercises.",
-            image: "/National Institute of Standards and Technology (NIST).png",
+            image: "/Train Employees for NIST.png",
         },
         {
             title: "Monitor NIST Controls Continuously",
             text: "Implement automated monitoring to track NIST compliance controls in real time. Identify potential security gaps with configurable alerts and notifications.",
-            image: "/National Institute of Standards and Technology (NIST).png",
+            image: "/Monitor NIST Controls.png",
         },
         {
             title: "Simplify NIST Audit Collaboration",
             text: "Streamline collaboration with internal and external stakeholders by automating surveys and collecting necessary audit evidence for NIST audits.",
-            image: "/National Institute of Standards and Technology (NIST).png",
+            image: "/Simplify NIST Audit Collaboration.png",
         },
     ];
 

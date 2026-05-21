@@ -6,7 +6,7 @@ const SOC2 = () => {
         {
             title: "Strengthen Your Information Security Program for SOC 2",
             text: "Manage all aspects of your information security program from cloud risk assessments and control reviews to employee policy attestations and vendor risk management.",
-            image: "/SOC 2 (System and Organization Controls 2).png",
+            image: "/Strengthen Your Information.png",
         },
         {
             title: "Create SOC 2 Compliant Policies in Minutes",

@@ -37,8 +37,8 @@ const CTA = (props) => {
                     y1="14.544%"
                     y2="100%"
                   >
-                    <stop offset="0%" stopColor="#10B981"></stop>
-                    <stop offset="100%" stopColor="#059669" stopOpacity="0"></stop>
+                    <stop offset="0%" stopColor="#007BFF"></stop>
+                    <stop offset="100%" stopColor="#007BFF" stopOpacity="0"></stop>
                   </linearGradient>
                 </defs>
                 <path

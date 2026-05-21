@@ -6,27 +6,27 @@ const PCI = () => {
         {
             title: "Achieve PCI DSS Compliance with Ease",
             text: "Streamline your path to PCI DSS compliance with a unified solution that connects risks, controls, assessments, and reporting activities across your organization.",
-            image: "/PCI DSS (Payment Card Industry Data Security Standard).png",
+            image: "/Achieve.png",
         },
         {
             title: "Build Trust with PCI DSS Readiness",
             text: "Track your PCI DSS certification progress and maintain audit readiness while demonstrating your commitment to securing payment card information.",
-            image: "/PCI DSS (Payment Card Industry Data Security Standard).png",
+            image: "/Build Trust.png",
         },
         {
             title: "Tailored PCI DSS Policies",
             text: "Deploy pre-built PCI DSS security policies or customize your own using an intuitive editor to align with compliance requirements and security standards.",
-            image: "/PCI DSS (Payment Card Industry Data Security Standard).png",
+            image: "/Tailored PCI DSS.png",
         },
         {
             title: "Manage Compliance Evidence Easily",
             text: "Provide real-time visibility into your compliance and security posture by organizing PCI DSS evidence and certifications in one centralized platform.",
-            image: "/PCI DSS (Payment Card Industry Data Security Standard).png",
+            image: "/Manage Compliance.png",
         },
         {
             title: "Simplified Assessments and Remediation",
             text: "Automate PCI DSS control assessments, monitor compliance gaps, and streamline remediation workflows with AI-powered issue management.",
-            image: "/PCI DSS (Payment Card Industry Data Security Standard).png",
+            image: "/Simplified Assessments.png",
         },
     ];
 

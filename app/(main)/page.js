@@ -302,8 +302,8 @@ export default function Home() {
                             className="cdzmb ca1ms chdke cv6pf cq2iz cta5t cq6fz csbhs cmjk5 crsge cblyu citnk"
                             aria-hidden="true"
                           >
-                            <div className="cje6l cg3aq ci4ze cku0c cxixl csbhs cvjd3"></div>
-                            <div className="cg3aq csmir crzj1 cku0c csbhs cl6o6 cf1rh"></div>
+                            <div className="cje6l cg3aq ci4ze cku0c cxixl csbhs cvjd3 hero-glow-blue"></div>
+                            <div className="cg3aq csmir crzj1 cku0c csbhs cl6o6 cf1rh hero-glow-blue"></div>
                           </div>
 
                           {/* Text */}
@@ -817,7 +817,7 @@ export default function Home() {
                     y1="14.544%"
                     y2="100%"
                   >
-                    <stop offset="0%" stopColor="#10B981"></stop>
+                    <stop offset="0%" stopColor=""></stop>
                     <stop
                       offset="100%"
                       stopColor="#3B82F6"

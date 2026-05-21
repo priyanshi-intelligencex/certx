@@ -57,7 +57,7 @@ const About = () => {
                                     src="/about-icon.svg"
                                     width={72}
                                     height={72}
-                                    alt="About icon"
+                                    alt="About icon" 
                                 />
                             </div>
                         </div>
@@ -75,8 +75,8 @@ const About = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
                         <defs>
                             <linearGradient id="bs4-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
-                                <stop offset="0%" stopColor="#34D399"></stop>
-                                <stop offset="100%" stopColor="#059669" stopOpacity="0"></stop>
+                                <stop offset="0%" stopColor="#007BFF"></stop>
+                                <stop offset="100%" stopColor="#007BFF" stopOpacity="0"></stop>
                             </linearGradient>
                         </defs>
                         <path fill="url(#bs4-a)" fillRule="evenodd" d="m0 0 461 369-284 58z" transform="matrix(1 0 0 -1 0 427)"></path>

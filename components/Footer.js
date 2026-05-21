@@ -13,7 +13,7 @@ const Footer = () => {
           {/* LEFT — logo + description + copyright */}
           <div className="w-full lg:w-[260px] shrink-0">
 
-            <Link href="/" className="logo-capsule inline-flex">
+            <Link href="/" className=" inline-flex">
               <Image
                 src="/certx-logo.png"
                 alt="CERTX"

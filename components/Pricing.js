@@ -33,7 +33,7 @@ const Pricing = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
   <defs>
     <linearGradient id="bs5-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
-      <stop offset="0%" stopColor="#10B981"></stop> {/* Green */}
+      <stop offset="0%" stopColor="#007BFF"></stop> {/* Green */}
       <stop offset="100%" stopColor="#3B82F6" stopOpacity="0"></stop> {/* Blue */}
     </linearGradient>
   </defs>

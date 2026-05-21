@@ -11,17 +11,17 @@ const Features = () => {
                 <div className="c7rlc c4lt2 ca7yh cxk7g c62s6">
 
                     {/* Illustration */}
-                    <div className="cdzmb cpl4a cxmgp csbhs cvjd3 ca0nu cblyu" aria-hidden="true">
+                    {/* <div className="cdzmb cpl4a cxmgp csbhs cvjd3 ca0nu cblyu" aria-hidden="true">
                         <div className="ca1ms cq6fz csbhs c7anr cblyu">
                             <Image
-                                src="/glow-top.svg"
+                                src="/glow-top.png"
                                 width={1404}
                                 height={658}
                                 alt="Features Illustration"
                                 className="cw312"
                             />
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="cjqw8 cyuy9 cpwbp c5dbr">
                         <div>
@@ -62,7 +62,7 @@ const Features = () => {
                                                 >
                                                     <defs>
                                                         <linearGradient id="pulse-a" x1="50%" x2="50%" y1="100%" y2="0%">
-                                                            <stop offset="0%" stopColor="#10B981"></stop> {/* Green */}
+                                                            <stop offset="0%" stopColor="#007BFF"></stop> {/* blue */}
                                                             <stop offset="76.382%" stopColor="#FFFFFF"></stop> {/* White */}
                                                             <stop offset="100%" stopColor="#3B82F6"></stop> {/* Blue */}
                                                         </linearGradient>

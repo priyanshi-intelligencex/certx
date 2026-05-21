@@ -51,16 +51,16 @@ const Navbar = () => {
         <div className="cu781 cta5t c7uhm citnk cqxtx ">
 
           <div className="flex items-center">
-            <Link href="/" aria-label="Certx Home" className="logo-capsule">
-              <Image
-                className="cw312"
-                src="/certx-logo.png"
-                width={100}
-                height={100}
-                alt="Stellar"
-              />
-            </Link>
-          </div>
+  <Link href="/" aria-label="Certx Home">
+    <Image
+      src="/certx-logo.png"
+      width={100}
+      height={100}
+      alt="Stellar"
+      className="cw312"
+    />
+  </Link>
+</div>
 
           <nav className="ckft5 c4bse c01dc">
             <ul className="cv6pf cta5t ckscb citnk cih8s">

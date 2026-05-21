@@ -1443,7 +1443,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .c97jb:focus,
 .cc85j:focus {
     --tw-border-opacity: 1;
-    border-color: rgb(168 85 247/var(--tw-border-opacity))
+    border-color: rgb(0 123 255/var(--tw-border-opacity))
 }
 
 .csqk0,
@@ -1488,7 +1488,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .cc85j {
     border-radius: 0.125rem;
     --tw-text-opacity: 1;
-    color: rgb(147 51 234/var(--tw-text-opacity))
+    color: rgb(0 123 255(--tw-text-opacity))
 }
 
 .cca6r::-webkit-scrollbar {
@@ -2628,7 +2628,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .cvimj>:not([hidden])~:not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgb(0 255 0 / 35%)
+    border-color: rgb( #007BFF/ 35%)
 }
 
 .cxmgp {
@@ -2744,7 +2744,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .ckqrw {
     --tw-border-opacity: 1;
-    border-color: rgb(0 255 15)
+    border-color: rgb( #007BFF)
 }
 
 .cxnk7 {
@@ -2758,7 +2758,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .ch7ii {
     --tw-border-opacity: 1;
-    border-color: rgb(50 255 0 / 25%)
+    border-color: rgb( #007BFF/ 25%)
 }
 
 .cn0tc {
@@ -2833,7 +2833,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .cpvrw {
-    --tw-gradient-from: #55f75d var(--tw-gradient-from-position);
+    --tw-gradient-from:  #007BFF var(--tw-gradient-from-position);
     --tw-gradient-to: rgb(168 85 247 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
 }
@@ -3430,8 +3430,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .cje6l {
     --tw-blur: blur(120px);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+     background: rgba(37, 99, 235, 0.6);
 }
+
 
 .cczds {
     --tw-blur: blur(2px);
@@ -3440,8 +3442,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .crzj1 {
     --tw-blur: blur(40px);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+
+    background: rgba(37, 99, 235, 0.45);
 }
+
 
 .c4ftj {
     --tw-blur: blur(60px);
@@ -3575,7 +3580,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .cwqjd {
-    background: linear-gradient(#2563eb, #2563eb) padding-box padding-box, linear-gradient(#3b82f6, #25eb85 75%, #0000 100%) border-box;
+    background: linear-gradient(#2563eb, #2563eb) padding-box padding-box, linear-gradient(#3b82f6,  #007BFF 75%, #0000 100%) border-box;
 }
 
 .cxs7n {
@@ -4124,7 +4129,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .cuz37:hover {
     --tw-text-opacity: 1;
-    color: rgb(0 255 25)
+    color: rgb(#007BFF)
 }
 
 .cj1pe:hover {
@@ -4287,7 +4292,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .c73l4:hover .chszh {
-    fill: #75f755
+    fill:  #007BFF
 }
 
 .cq4tu:hover .cojpw {
@@ -5015,7 +5020,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .ctowc>div:nth-of-type(4n+3)::before {
     content: var(--tw-content);
     --tw-border-opacity: 1;
-    border-color: #55f75d
+    border-color: #007BFF
 }
 
 @media not all and (min-width: 768px) {
@@ -5221,7 +5226,7 @@ input[type="search"]::-webkit-search-results-decoration {
     inset: 0;
     background:
         radial-gradient(circle at top left,
-            rgba(16, 185, 129, 0.25),
+            rgba(37, 99, 235, 0.25),
             transparent 28%),
         radial-gradient(circle at bottom right,
             rgba(59, 130, 246, 0.2),
@@ -5271,14 +5276,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .framework-section {
     position: relative;
-    padding: 110px 0;
+    padding: 50px 0;
 }
 
 .framework-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 90px;
+    gap: 50px;
 }
 
 .framework-section-reverse .framework-image {
@@ -5300,10 +5305,10 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 999px;
     background:
         radial-gradient(circle,
-            rgba(16, 185, 129, 0.22),
+            rgba(#007BFF),
             rgba(59, 130, 246, 0.12),
             transparent 70%);
-    filter: blur(50px);
+    filter: blur(40px);
     z-index: -1;
 }
 
@@ -5348,8 +5353,8 @@ input[type="search"]::-webkit-search-results-decoration {
 @media (max-width: 768px) {
 
     .framework-hero {
-        padding-top: 140px;
-        padding-bottom: 80px;
+        padding-top: 120px;
+        padding-bottom: 50px;
     }
 
     .framework-hero h1 {
@@ -5369,7 +5374,7 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 
     .framework-section {
-        padding: 70px 0;
+        padding: 35px 0;
     }
 }
 .contact-two-col {
@@ -5393,7 +5398,7 @@ input[type="search"]::-webkit-search-results-decoration {
     overflow: hidden;
     background:
         radial-gradient(circle at top left,
-            rgba(16, 185, 129, 0.18),
+            rgba(37, 99, 235, 0.25),
             transparent 28%),
         radial-gradient(circle at top right,
             rgba(59, 130, 246, 0.18),
@@ -5558,4 +5563,26 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #94a3b8;
   border: 1px solid rgba(255, 255, 255, 0.06);
   line-height: 1.7;
+}
+/* Force green section glow to primary blue */
+.c1yms,
+.cg9hr,
+.c834w,
+.cje6l,
+.csmir,
+.crzj1,
+.cltun {
+  background-color: transparent ;
+}
+
+.cje6l,
+.csmir,
+.crzj1,
+.cltun {
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.55) 0%,
+    rgba(29, 78, 216, 0.25) 45%,
+    rgba(15, 23, 42, 0) 75%
+  ) ;
 }

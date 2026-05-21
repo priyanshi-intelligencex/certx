@@ -6,27 +6,27 @@ const ISO = () => {
         {
             title: "Strengthen Your Information Security Management System (ISMS)",
             text: "Use an integrated platform to manage all aspects of your ISMS, including cloud risk assessments, control reviews, employee policy attestations, and vendor risk management.",
-            image: "/International Organization for Standardization.png",
+            image: "/Strengthen Your Information.png",
         },
         {
             title: "Create and Customize ISO 27001 Policies",
             text: "Access a comprehensive library of pre-built ISO 27001 policies or upload your own to get started quickly. Customize policies using an intuitive editor for better compliance.",
-            image: "/International Organization for Standardization.png",
+            image: "/Create and Customiz.png",
         },
         {
             title: "Empower Employees as Compliance Champions",
             text: "Train your workforce on compliance requirements with targeted training programs, periodic tests, and anti-phishing campaigns to strengthen security awareness.",
-            image: "/International Organization for Standardization.png",
+            image: "/Empower Employees.png",
         },
         {
             title: "Monitor ISO Compliance Controls in Real-Time",
             text: "Continuously track compliance with ISO standards through automated monitoring. Identify compliance gaps and critical issues in real time with alerts and notifications.",
-            image: "/International Organization for Standardization.png",
+            image: "/Monitor ISO Compliance.png",
         },
         {
             title: "Simplify Stakeholder Collaboration and Auditing",
             text: "Enhance communication with stakeholders through deployable surveys and streamlined audit evidence collection while maintaining transparency and efficiency.",
-            image: "/International Organization for Standardization.png",
+            image: "/Simplify Stakeholder.png",
         },
     ];
 
