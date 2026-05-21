@@ -5107,10 +5107,10 @@ input[type="search"]::-webkit-search-results-decoration {
 .framework-dropdown-menu-inner {
     overflow: hidden;
     border-radius: 0.75rem;
-    border: 1px solid rgb(255 255 255 / 10%);
-    background: rgb(15 23 42 / 92%);
+    border: 1px solid rgb(51 65 85);
+    background: rgb(15 23 42);
     box-shadow: 0 20px 40px rgb(0 0 0 / 28%);
-    backdrop-filter: blur(16px);
+    backdrop-filter: none;
     padding: 0.5rem;
 }
 
@@ -5458,6 +5458,20 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.manufacturing-page .framework-image {
+    isolation: isolate;
+}
+
+.manufacturing-page .framework-image::before {
+    z-index: 0;
+}
+
+.manufacturing-page .manufacturing-section-image {
+    position: relative;
+    z-index: 1;
+    object-fit: contain;
 }
 
 .framework-content h2 {

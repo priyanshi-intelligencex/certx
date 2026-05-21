@@ -16,11 +16,24 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* ── Navbar outer: full-width sticky wrapper, transparent ── */
+/* ── Navbar outer: full-width sticky wrapper ── */
+html {
+  scroll-padding-top: 104px;
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 88px;
+  }
+}
+
 .navbar-outer {
-  background: transparent;
+  isolation: isolate;
+  background: #020617;
   padding-top: 12px;
   padding-bottom: 12px;
+  border-bottom: 1px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.32);
 }
 
 /* ── Navbar pill: the floating capsule shape ── */
@@ -34,19 +47,18 @@ body {
   border-radius: 9999px;
   background: linear-gradient(
     90deg,
-    rgb(37, 99, 235, 0.8) 0%,
+    rgb(37, 99, 235) 0%,
     rgb(15, 16, 20) 50%,
     rgb(30, 60, 130) 100%
   );
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid #334155;
   box-shadow:
     0 2px 20px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.07);
   transition:
     background 0.35s ease,
-    backdrop-filter 0.35s ease,
     border-color 0.35s ease,
     box-shadow 0.35s ease;
 }
@@ -54,13 +66,13 @@ body {
 .navbar-pill-scrolled {
   background: linear-gradient(
     90deg,
-    rgb(37, 99, 235, 0.8) 0%,
+    rgb(37, 99, 235) 0%,
     rgb(10, 14, 20) 50%,
     rgb(35, 70, 150) 100%
   );
-  backdrop-filter: blur(30px) saturate(220%);
-  -webkit-backdrop-filter: blur(30px) saturate(220%);
-  border-color: rgba(37, 99, 235, 0.8);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-color: #2563eb;
   box-shadow:
     0 4px 32px rgba(0, 0, 0, 0.38),
     inset 0 1px 0 rgba(255, 255, 255, 0.09);
