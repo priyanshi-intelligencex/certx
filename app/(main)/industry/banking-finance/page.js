@@ -6,27 +6,27 @@ const BankingFinance = () => {
         {
             title: "Optimize Audit Efficiency",
             text: "Optimize Audit Efficiency refers to streamlining the audit process to save time, reduce costs, and improve accuracy without compromising compliance or quality.",
-            image: "/banking-finance.png",
+            image: "/Banking And Finance.png",
         },
         {
             title: "Simplify Control Testing",
             text: "Simplify Control Testing means making the process of checking internal controls easier, faster, and more effective through automation and centralized data.",
-            image: "/banking-finance.png",
+            image: "/Simplify Control Testing.png",
         },
         {
             title: "Track and Analyze Key Risk Indicators",
             text: "Track and Analyze Key Risk Indicators involves monitoring measurable data points that signal potential threats to an organization’s objectives.",
-            image: "/banking-finance.png",
+            image: "/Banking And Finance.png",
         },
         {
             title: "Strengthen IT and Compliance Risk Management",
             text: "Strengthen IT and Compliance Risk Management means building robust processes to protect critical systems, data, and business operations.",
-            image: "/banking-finance.png",
+            image: "/Strengthen IT and Compliance.png",
         },
         {
             title: "Unify Governance, Risk, and Compliance (GRC)",
             text: "Unify Governance, Risk, and Compliance (GRC) brings together policies, processes, and tools to manage business objectives and regulatory requirements.",
-            image: "/banking-finance.png",
+            image: "/Unify Governance.png",
         },
     ];
 

@@ -6,22 +6,22 @@ const Technology = () => {
         {
             title: "Simplify Policy Creation and Maintenance",
             text: "Effortlessly manage and update essential policies and procedures. Integrate with Microsoft Word and use pre-built templates to quickly create and modify documents. Ensure seamless version control with live updates and align finalized policies with relevant framework requirements and controls.",
-            image: "/technology.png",
+            image: "/Simplify Policy Creation and Maintenance.png",
         },
         {
             title: "Achieve Seamless Multi-Framework Compliance",
             text: "Streamline the management of various frameworks by linking their requirements, controls, and risks in one unified system. Minimize redundancies by detecting overlapping controls, enabling you to scale compliance efforts more efficiently while staying ahead of evolving regulations.",
-            image: "/technology.png",
+            image: "/Achieve Seamless Multi-Framework.png",
         },
         {
             title: "Automate Report Creation for Deeper Insights",
             text: "Quickly generate insightful reports on key compliance risks and metrics. Dive into both high-level executive dashboards and in-depth reports to evaluate your compliance status, and reduce administrative workload by automating report creation processes.",
-            image: "/technology.png",
+            image: "/Automate Report Creation.png",
         },
         {
             title: "Accelerate Operational Resilience with Integrated Risk Management",
             text: "Empower your organization to address compliance, audit, cyber risk, and third-party challenges with a unified solution. By automating and connecting these critical areas, gain a strategic advantage in maintaining resilience and reducing operational vulnerabilities.",
-            image: "/technology.png",
+            image: "/Accelerate Operational Resilience.png",
         },
     ];
 

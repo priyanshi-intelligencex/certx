@@ -114,7 +114,7 @@ export default function Home() {
                   className="chl73 c80q8 ch30f crgfn c9p57 cnt4i c6odu cgxy0"
                   data-aos="fade-down"
                 >
-                  <span className="text-green-400">Risk</span> And Compliance
+                  <span className="text-blue-800">Risk</span> And Compliance
                 </h1>
                 <p
                   className="chu7q csqzg ci5zu"

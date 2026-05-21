@@ -6,27 +6,27 @@ const Telecom = () => {
         {
             title: "Enhance Visibility into Risk and Compliance Operations",
             text: "Telecommunications providers face a variety of challenges, including an increasingly complex risk landscape, growing regulatory and compliance demands, and rising privacy and security threats. The shift towards 5G and the upcoming 6G technology will only increase the scope of compliance obligations, requiring a more interconnected approach to risk and compliance management.",
-            image: "/telecom.png",
+            image: "/Enhance Visibility into Risk.png",
         },
         {
             title: "Simplify Policy Management and Updates",
             text: "Managing the ongoing updates, communications, and maintenance of policies and procedures can be time-consuming. Integrate with Microsoft Word, use pre-built templates to speed up document creation, and maintain accurate version control with real-time updates mapped to compliance frameworks.",
-            image: "/telecom.png",
+            image: "/Simplify Policy Management and Updates.png",
         },
         {
             title: "Comprehensive View of Frameworks and Controls",
             text: "Map controls to specific frameworks and gain clear visibility into overlapping requirements and risk areas. Customized filters and centralized tracking help telecom teams focus on high-priority compliance and operational objectives efficiently.",
-            image: "/telecom.png",
+            image: "/Comprehensive View of Frameworks.png",
         },
         {
             title: "Foster Seamless Stakeholder Collaboration",
             text: "Improve communication and collaboration across departments through automated workflows, evidence collection, audit tracking, and centralized repositories. Maintain transparency and simplify coordination across the entire audit lifecycle.",
-            image: "/telecom.png",
+            image: "/Foster Seamless Stakeholder.png",
         },
         {
             title: "Centralized Risk and Compliance Oversight",
             text: "Create a single source of truth for compliance and risk management activities. Track assessments, automate reporting, and streamline management tasks while responding quickly to regulatory changes and operational incidents.",
-            image: "/telecom.png",
+            image: "/Centralized Risk and Compliance.png",
         },
     ];
 

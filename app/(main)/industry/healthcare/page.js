@@ -6,27 +6,27 @@ const Healthcare = () => {
         {
             title: "Simplify Policy Management",
             text: "Streamline the process of updating, communicating, and maintaining policies and procedures by integrating with Microsoft Word. Use standard templates to save time and make real-time updates to avoid version control issues.",
-            image: "/healthcare.png",
+            image: "/Simplify Policy Management.png",
         },
         {
             title: "Build a Centralized Asset Inventory",
             text: "Keep track of important assets in one unified system. Link assets to framework requirements, risks, and controls, ensuring all critical information is connected for smoother future audits.",
-            image: "/healthcare.png",
+            image: "/Build a Centralized.png",
         },
         {
             title: "Enhance Governance, Risk, and Compliance Integration",
             text: "Healthcare organizations face growing compliance challenges. A connected governance, risk, and compliance system ensures better management and mitigation of risks across the healthcare sector.",
-            image: "/healthcare.png",
+            image: "/Enhance Governance.png",
         },
         {
             title: "Automate Risk and Compliance Management",
             text: "Automate and integrate governance, risk, and compliance processes to improve oversight, manage risks effectively, and ensure stronger regulatory compliance.",
-            image: "/healthcare.png",
+            image: "/Automate Risk.png",
         },
         {
             title: "Improve Cyber Risk and Regulatory Compliance",
             text: "Strengthen risk and compliance management systems to better manage cyber threats, improve cybersecurity posture, and support ongoing regulatory adherence.",
-            image: "/healthcare.png",
+            image: "/Improve Cyber Risk.png",
         },
     ];
 

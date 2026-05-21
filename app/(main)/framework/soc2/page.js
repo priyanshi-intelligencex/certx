@@ -11,22 +11,22 @@ const SOC2 = () => {
         {
             title: "Create SOC 2 Compliant Policies in Minutes",
             text: "Leverage pre-built SOC 2 policies or upload your own to quickly establish a compliant information security program tailored to your organization.",
-            image: "/SOC 2 (System and Organization Controls 2).png",
+            image: "/Create SOC 2 Compliant.png",
         },
         {
             title: "Streamline Your SOC 2 Compliance Workflows",
             text: "Centralize compliance activities, track evidence, collaborate with teams, and simplify your SOC 2 auditing process with improved visibility.",
-            image: "/SOC 2 (System and Organization Controls 2).png",
+            image: "/Streamline Your SOC 2.png",
         },
         {
             title: "Accelerate Your SOC 2 Audit Process",
             text: "Invite auditors and consultants onto the platform, share evidence securely, and track audit progress in real-time for a faster audit experience.",
-            image: "/SOC 2 (System and Organization Controls 2).png",
+            image: "/Accelerate Your SOC 2 Audit.png",
         },
         {
             title: "Enhance Collaboration with Your Audit Team",
             text: "Manage all audit-related communication in one place, track requests, and streamline responses to ensure a smooth SOC 2 compliance journey.",
-            image: "/SOC 2 (System and Organization Controls 2).png",
+            image: "/Enhance Collaboration.png",
         },
     ];
 
